@@ -2,16 +2,16 @@
 <%@ page session="false" %>
 <html>
 <head>
-	<title>Home</title>
+	<title>Sign</title>
 </head>
 <body>
 <h1>
-    Home PAGE
+    Sign PAGE
 </h1>
 
 <P>  The time on the server is ${serverTime}. </P>
     
-<a href="${CTX_PATH}/sign">sign</a>
+<a href="${CTX_PATH}/">home</a>
     
 </body>
 </html>
