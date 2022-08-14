@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+    
+    <!-- Oracle -->
+    <beans profile="oracle">
+        <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+            <property name="driverClassName" value="${Globals.oracle.DriverClassName}" />
+            <property name="url" value="${Globals.oracle.Url}" />
+            <property name="username" value="${Globals.oracle.UserName}" />
+            <property name="password" value="${Globals.oracle.Password}" />
+        </bean>
+        <alias name="dataSource" alias="moon.dataSource" />
+    </beans>
+
+    <!-- MSSQL -->
+    <beans profile="mssql">
+        <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+            <property name="driverClassName" value="${Globals.mssql.DriverClassName}" />
+            <property name="url" value="${Globals.mssql.Url}" />
+            <property name="username" value="${Globals.mssql.UserName}" />
+            <property name="password" value="${Globals.mssql.Password}" />
+        </bean>
+        <alias name="dataSource" alias="moon.dataSource" />
+    </beans>
+    
+    <!-- MySQL -->
+    <beans profile="mysql">
+        <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+            <property name="driverClassName" value="${Globals.mysql.DriverClassName}" />
+            <property name="url" value="${Globals.mysql.Url}" />
+            <property name="username" value="${Globals.mysql.UserName}" />
+            <property name="password" value="${Globals.mysql.Password}" />
+        </bean>
+        <alias name="dataSource" alias="moon.dataSource" />
+    </beans> 
+    
+    <!-- MariaDB -->
+    <beans profile="mariadb">
+        <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+            <property name="driverClassName" value="${Globals.mariadb.DriverClassName}" />
+            <property name="url" value="${Globals.mariadb.Url}" />
+            <property name="username" value="${Globals.mariadb.UserName}" />
+            <property name="password" value="${Globals.mariadb.Password}" />
+        </bean>    
+        <alias name="dataSource" alias="moon.dataSource" />
+    </beans>
+
+</beans>

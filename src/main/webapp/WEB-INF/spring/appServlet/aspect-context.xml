@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+    
+    <!-- Enable AspectJ style of Spring AOP -->
+    <aop:aspectj-autoproxy />
+
+    <!--  Controller Log Aspect -->
+    <bean id="controllerLogAspect" class="com.common.aspect.ControllerLogAspect" />
+<!--     <aop:config> -->
+<!--         <aop:pointcut id="controllerPointcut" expression="execution(* com.moon.material.*.*Controller.*(..))"/> -->
+<!--         <aop:aspect id="controllerLogManageAspect" ref="controllerLogAspect"> -->
+<!--             <aop:before pointcut-ref="controllerPointcut" method="beforeLog" /> -->
+<!--             <aop:after pointcut-ref="controllerPointcut" method="afterLog" /> -->
+<!--         </aop:aspect> -->
+<!--     </aop:config> -->
+
+    <!--  DAO Log Aspect -->
+<!--     <bean id="daoLogAspect" class="com.common.aspect.DaoLogAspect" /> -->
+<!--     <aop:config> -->
+<!--         <aop:aspect id="daoLogManageAspect" ref="daoLogAspect"> -->
+<!--             <aop:before pointcut="execution(* *..*DAO.*(..))" method="beforeLog" /> -->
+<!--             <aop:after pointcut="execution(* *..*DAO.*(..))" method="afterLog" /> -->
+<!--         </aop:aspect> -->
+<!--     </aop:config> -->
+    
+</beans>

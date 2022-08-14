@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<web-app version="2.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:javaee="http://java.sun.com/xml/ns/javaee"
     xsi:schemaLocation="http://java.sun.com/xml/ns/javaee https://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
 
     <!-- The definition of the Root Spring Container shared by all Servlets and Filters -->
@@ -8,10 +7,15 @@
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>
-            /WEB-INF/spring/root-context.xml   
+            /WEB-INF/spring/root-context.xml
         </param-value>
     </context-param>
-    
+    <!-- ${Globals.DbType} -->
+    <context-param>
+        <param-name>spring.profiles.active</param-name>
+        <param-value>mysql</param-value>
+    </context-param> 
+
     <!-- Creates the Spring Container shared by all Servlets and Filters -->
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
@@ -20,50 +24,85 @@
     <!-- Processes application requests -->
     <!-- 리스너로써 root-context.xml에 정의 되어있는 것들을 모든 서블릿과 필터가 공유 -->
     <!-- Controller가 공유하는 Bean들을 포함하는 Spring Container를 생성한다 -->
-    <!-- 공유하는 Bean: Dao, DataSource, Service --> 
-    <!-- DispatcherServlet에 의해 생성된 Bean은 ContextLoaderListener에 의해 생성된 Bean을 참조할 수 있다.--> 
+    <!-- 공유하는 Bean: Dao, DataSource, Service -->
+    <!-- DispatcherServlet에 의해 생성된 Bean은 ContextLoaderListener에 의해 생성된 Bean을 참조할 수 있다. -->
     <servlet>
-        <servlet-name>moonServlet</servlet-name>
+        <servlet-name>appServlet</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <init-param>
             <param-name>contextConfigLocation</param-name>
             <param-value>
                 /WEB-INF/spring/appServlet/servlet-context.xml,
-                /WEB-INF/spring/interceptor-context.xml,    
-                /WEB-INF/spring/aspect-context.xml  
+                /WEB-INF/spring/appServlet/aspect-context.xml,
+                /WEB-INF/spring/appServlet/interceptor-context.xml,
+                /WEB-INF/spring/appServlet/datasource-context.xml,
+<!--             /WEB-INF/spring/appServlet/transaction-context.xml, -->
+                /WEB-INF/spring/appServlet/mapper-context.xml
             </param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
-        
+
     <servlet-mapping>
-        <servlet-name>moonServlet</servlet-name>
+        <servlet-name>appServlet</servlet-name>
         <url-pattern>/</url-pattern>
         <url-pattern>*.do</url-pattern>
         <url-pattern>*.ajax</url-pattern>
     </servlet-mapping>
-    
+
     <!--/ Encoding filter -->
-    <filter> 
-        <filter-name>encodingFilter</filter-name> 
-        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class> 
-        <init-param> 
-           <param-name>encoding</param-name> 
-           <param-value>UTF-8</param-value> 
-        </init-param> 
-        <init-param> 
-           <param-name>forceEncoding</param-name> 
-           <param-value>true</param-value> 
-        </init-param> 
-     </filter> 
-     <filter-mapping> 
-        <filter-name>encodingFilter</filter-name> 
-        <url-pattern>/*</url-pattern> 
-     </filter-mapping>
-    <!-- Encoding filter /-->
-    
+    <filter>
+        <filter-name>encodingFilter</filter-name>
+        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+        <init-param>
+            <param-name>forceEncoding</param-name>
+            <param-value>true</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>encodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
     <session-config>
         <session-timeout>600</session-timeout>
     </session-config>
+    
+<!--     <error-page> -->
+<!--         <exception-type>java.lang.Throwable</exception-type> -->
+<!--         <location>/error/throwable</location> -->
+<!--     </error-page> -->
+<!--     <error-page> -->
+<!--         <exception-type>java.lang.Exception</exception-type> -->
+<!--         <location>/error/exception</location> -->
+<!--     </error-page> -->
+<!--     <error-page> -->
+<!--       <error-code>400</error-code> -->
+<!--       <location>/error/400</location> -->
+<!--     </error-page> -->
+<!--     <error-page> -->
+<!--       <error-code>404</error-code> -->
+<!--       <location>/error/404</location> -->
+<!--     </error-page> -->
+<!--     <error-page> -->
+<!--       <error-code>403</error-code> -->
+<!--       <location>/error/403</location> -->
+<!--     </error-page> -->
+<!--     <error-page> -->
+<!--       <error-code>405</error-code> -->
+<!--       <location>/error/405</location> -->
+<!--     </error-page> -->
+<!--     <error-page> -->
+<!--       <error-code>500</error-code> -->
+<!--       <location>/error/500</location> -->
+<!--     </error-page> -->
+<!--     <error-page> -->
+<!--       <error-code>503</error-code> -->
+<!--       <location>/error/503</location> -->
+<!--     </error-page> -->
 
 </web-app>

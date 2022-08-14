@@ -10,9 +10,6 @@ import org.springframework.stereotype.Repository;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 import org.springframework.web.util.UrlPathHelper;
 
-/**
- * Context path 변수 지정 인터셉터
- */
 @Repository
 public class InjectionInterceptor extends HandlerInterceptorAdapter {
     
@@ -23,6 +20,9 @@ public class InjectionInterceptor extends HandlerInterceptorAdapter {
 
     @Value("${Globals.System.Desc}")
     private String systemDesc;
+
+    @Value("${Globals.System.Version}")
+    private String systemVersion;
     
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
@@ -44,6 +44,7 @@ public class InjectionInterceptor extends HandlerInterceptorAdapter {
             request.setAttribute("CUR_PATH", curPath);
             request.setAttribute("SYS_NAME", systemName);
             request.setAttribute("SYS_DESC", systemDesc);
+            request.setAttribute("SYS_VERSION", systemVersion);
             
         } catch (Exception e) {
             e.printStackTrace();
@@ -51,4 +52,5 @@ public class InjectionInterceptor extends HandlerInterceptorAdapter {
         
         return super.preHandle(request, response, handler);
     }
+    
 }

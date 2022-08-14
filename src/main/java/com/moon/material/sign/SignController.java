@@ -33,7 +33,7 @@ public class SignController {
 		
 		model.addAttribute("serverTime", formattedDate );
 		
-		return "/sign/sign";
+		return "/material/sign/sign";
 	}
 	
 }

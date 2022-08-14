@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+   
+    <!-- Mybatis setup for Mybatis Database Layer -->
+    <bean id="moon.sqlSession" class="org.mybatis.spring.SqlSessionFactoryBean">        
+        <property name="dataSource" ref="moon.dataSource" />
+        <property name="configLocation" value="classpath:/mapper/mapper-config.xml" />
+        <property name="mapperLocations">
+            <list>
+                <value>classpath:/mapper/**/*_${Globals.DbType}.xml</value>
+            </list>
+        </property>
+    </bean>
+
+    <!-- Mybatis Session Template -->
+    <bean id="moon.sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
+        <constructor-arg ref="moon.sqlSession" />
+    </bean>
+    
+</beans>
