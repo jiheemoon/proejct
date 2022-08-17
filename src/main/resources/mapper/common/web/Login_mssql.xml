@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="UserDAO">
+
+    <!-- ##IGNORE_LOG## -> 로그에 쿼리문을 출력하지 않으려면 헤더에 정의한다. -->
+
+    <select id="loadUserByUsername" parameterType="String" resultType="UserDetailsVO"> /* Login_SQL_mysql.xml UserDAO.loadUserByUsername ##IGNORE_LOG## */
+        SELECT TOP(1)
+             U.USER_NO
+            ,U.USER_ID
+            ,U.USER_NM
+            ,C.USER_PW
+        FROM TB_USER U
+            LEFT OUTER JOIN TB_USER_CONTEXT C ON U.USER_NO = C.USER_NO 
+        WHERE   U.USE_YN = 'Y'
+            AND U.USER_ID = #{loginId}
+        ORDER BY C.CREATE_DATE DESC
+    </select>
+    
+    <select id="selectUserById" parameterType="String" resultType="UserVO"> /* Login_SQL_mysql.xml UserDAO.selectUserById ##IGNORE_LOG## */
+        SELECT U.USER_NO
+             , U.USER_ID
+             , U.USER_NM
+             , U.USER_TYPE
+             , U.DEPT_ID
+             , D.DEPT_NM
+             , T.TITLE_ID
+             , T.TITLE_NM
+             , P.POSITION_ID
+             , P.POSITION_NM
+             , U.MOBILE
+             , U.TELEPHONE
+             , U.EMAIL
+             , U.ENTER_DATE
+             , U.RETIRE_DATE
+             , U.CREATE_DATE
+             , U.UPDATE_DATE
+             , U.USE_YN   
+        FROM TB_USER U
+            INNER JOIN TB_DEPT D ON D.DEPT_ID = U.DEPT_ID
+            INNER JOIN TB_TITLE T ON T.TITLE_ID = U.TITLE_ID
+            INNER JOIN TB_POSITION P ON P.POSITION_ID = U.POSITION_ID
+        WHERE   U.USE_YN = 'Y'
+            AND U.USER_ID = #{loginId} 
+    </select>
+    
+    <select id="selectRoleById" parameterType="String" resultType="String"> /* Login_SQL_mysql.xml UserDAO.selectRoleById ##IGNORE_LOG## */
+        SELECT R.ROLE_ID
+        FROM TB_USER_ROLE UR
+            INNER JOIN TB_USER U ON U.USER_NO = UR.USER_NO
+            INNER JOIN TB_ROLE R ON R.ROLE_NO = UR.ROLE_NO 
+        WHERE   U.USE_YN = 'Y'
+            AND U.USER_ID = #{loginId} 
+    </select>
+    
+<!--    <select id="selectAuthMenu" resultType="UserVO"> /* Login_SQL_mysql.xml UserDAO.selectAuthMenu */ -->
+<!--         <![CDATA[ -->
+<!--             SELECT ROLE_NO, ROLE_ID, ROLE_NM -->
+<!--             FROM TB_ROLE -->
+<!--         ]]> -->
+<!--     </select> -->
+     
+<!--    <select id="selectAllUserContexts" resultType="UserDetailsVO"> /* Login_SQL_mysql.xml UserDAO.selectAllUserContexts */ -->
+<!-- 		<![CDATA[ -->
+<!--             SELECT user_id, user_pw, login_fail_count, login_fail_date, login_success_date, is_account_non_expired, is_account_non_locked, is_credentials_non_expired, is_enabled -->
+<!--             FROM TBUSERCONTEXT -->
+<!-- 		]]> -->
+<!-- 	</select> -->
+    
+<!--     <select id="selectFailCount" parameterType="String" resultType="Integer"> /* Login_SQL_mysql.xml UserDAO.selectFailCount */ -->
+<!--         <![CDATA[ -->
+<!--             SELECT LOGIN_FAIL_COUNT -->
+<!--             FROM TBUSERCONTEXT -->
+<!--             WHERE user_id = #{loginId} -->
+<!--         ]]> -->
+<!--     </select> -->
+	
+<!-- 	<update id="plusFailCount" parameterType="String" > /* Login_SQL_mysql.xml UserDAO.plusFailCount */ -->
+<!-- 		<![CDATA[ -->
+<!-- 			UPDATE TBUSERCONTEXT SET LOGIN_FAIL_COUNT = LOGIN_FAIL_COUNT + 1 -->
+<!-- 			WHERE user_id = #{loginId} -->
+<!-- 		]]> -->
+<!-- 	</update> -->
+    
+<!--     <update id="resetFailCount" parameterType="UserDetailsVO"> /* Login_SQL_mysql.xml UserDAO.resetFailCount */ -->
+<!--         <![CDATA[ -->
+<!--             UPDATE TBUSERCONTEXT SET LOGIN_FAIL_COUNT = 0 -->
+<!--             WHERE user_id = #{loginId} -->
+<!--         ]]> -->
+<!--     </update> -->
+	
+<!-- 	<update id="updateEnabledFalse" parameterType="UserDetailsVO"> /* Login_SQL_mysql.xml UserDAO.updateEnabledFalse */ -->
+<!-- 		<![CDATA[ -->
+<!-- 			UPDATE TBUSERCONTEXT SET is_enabled = false -->
+<!-- 			WHERE user_id = #{loginId} -->
+<!-- 		]]> -->
+<!-- 	</update> -->
+	
+<!-- 	<update id="updateLoginSuccessDate"  parameterType="UserDetailsVO"> /* Login_SQL_mysql.xml UserDAO.updateLoginSuccessDate */ -->
+<!-- 		<![CDATA[ -->
+<!-- 			UPDATE TBUSERCONTEXT SET login_success_date = NOW() -->
+<!-- 			WHERE user_id = #{loginId} -->
+<!-- 		]]> -->
+<!-- 	</update> -->
+    
+<!--     <update id="updateLoginFailDate"  parameterType="UserDetailsVO"> /* Login_SQL_mysql.xml UserDAO.updateLoginFailDate */ -->
+<!--         <![CDATA[ -->
+<!--             UPDATE TBUSERCONTEXT SET login_fail_date = NOW() -->
+<!--             WHERE user_id = #{loginId} -->
+<!--         ]]> -->
+<!--     </update> -->
+    
+<!-- ======================================= User 정보 ======================================= -->
+    
+<!-- 	<select id="selectAllUser" resultType="UserVO"> /* Login_SQL_mysql.xml UserDAO.selectAllUser*/ -->
+<!--         <![CDATA[ -->
+<!--             SELECT user_id, user_nm, email, phone, address -->
+<!--             FROM TBUSER -->
+<!--         ]]> -->
+<!--     </select> -->
+    
+<!--     <select id="selectUserById" resultType="String"> /* Login_SQL_mysql.xml UserDAO.selectUserById */ -->
+<!--         <![CDATA[ -->
+<!--             SELECT user_id, user_nm, email, phone, address -->
+<!--             FROM TBUSER -->
+<!--             WHERE user_id = #{userId} -->
+<!--         ]]> -->
+<!--     </select> -->
+     
+<!--     <insert id="insertUser" parameterType="UserDetailsVO"> /* Login_SQL_mysql.xml UserDAO.insertUser */ -->
+<!--         <![CDATA[ -->
+<!--             INSERT INTO tbuser (user_id, user_nm, email, phone, address)  -->
+<!--             VALUES(#{userId}, #{userPw}, #{email}, #{phone}, #{address}); -->
+<!--         ]]> -->
+<!--     </insert> -->
+    
+<!--     <insert id="insertUserContext" parameterType="UserDetailsVO"> /* Login_SQL_mysql.xml UserDAO.insertUserContext */ -->
+<!--         <![CDATA[ -->
+<!--             INSERT INTO tbusercontext (user_id, user_pw, login_fail_count, login_fail_date, login_success_date, is_account_non_expired, is_account_non_locked, is_credentials_non_expired, is_enabled) -->
+<!--             VALUES(#{userId}, #{userPw}, 0, NULL, NULL, '1', '1', '1', '1'); -->
+<!--         ]]> -->
+<!--     </insert> -->
+    
+<!--     <insert id="insertUserAuth" parameterType="UserDetailsVO"> /* Login_SQL_mysql.xml UserDAO."insertUserAuth" */ -->
+<!--         <![CDATA[ -->
+<!--             INSERT INTO tbuserauth (user_id, authority)  -->
+<!--             VALUES(#{userId}, #{AUTHORITY}); -->
+<!--         ]]> -->
+<!--     </insert> -->
+    
+<!--     <update id="updateUser" parameterType="UserDetailsVO"> /* Login_SQL_mysql.xml UserDAO.updateUser */ -->
+<!--         <![CDATA[ -->
+<!--             UPDATE TBUSER SET enabled = false -->
+<!--             WHERE user_id = #{loginId} -->
+<!--         ]]> -->
+<!--     </update> -->
+    
+<!--     <delete id="deleteUserById" parameterType="String"> /* Login_SQL_mysql.xml UserDAO.deleteUserById */ -->
+<!--         <![CDATA[ -->
+<!--             DELETE TBUSER -->
+<!--             WHERE user_id = #{userId} -->
+<!--         ]]> -->
+<!--     </delete> -->
+
+</mapper>

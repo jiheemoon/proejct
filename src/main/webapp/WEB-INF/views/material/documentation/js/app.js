@@ -1,5 +1,5 @@
-﻿$.AdminBSB = {};
-$.AdminBSB.options = {
+﻿$.MOON = {};
+$.MOON.options = {
     colors: {
         red: '#F44336',
         pink: '#E91E63',
@@ -35,7 +35,7 @@ $.AdminBSB.options = {
     }
 }
 
-$.AdminBSB.leftSideBar = {
+$.MOON.leftSideBar = {
     activate: function () {
         var _this = this;
         var $body = $('body');
@@ -98,7 +98,7 @@ $.AdminBSB.leftSideBar = {
     },
     setMenuHeight: function () {
         if (typeof $.fn.slimScroll != 'undefined') {
-            var configs = $.AdminBSB.options.leftSideBar;
+            var configs = $.MOON.options.leftSideBar;
             var height = ($(window).height() - ($('.legal').outerHeight() + $('.user-info').outerHeight() + $('.navbar').innerHeight()));
             var $el = $('.list');
 
@@ -140,7 +140,7 @@ $.AdminBSB.leftSideBar = {
     }
 };
 
-$.AdminBSB.navbar = {
+$.MOON.navbar = {
     activate: function () {
         var $body = $('body');
         var $overlay = $('.overlay');
@@ -222,6 +222,6 @@ function routeChanged(scope, callback) {
 
 
 $(function () {
-    $.AdminBSB.leftSideBar.activate();
-    $.AdminBSB.navbar.activate();
+    $.MOON.leftSideBar.activate();
+    $.MOON.navbar.activate();
 });

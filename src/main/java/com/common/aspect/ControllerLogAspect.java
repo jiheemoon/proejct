@@ -25,7 +25,7 @@ public class ControllerLogAspect {
                 String[] values = method.getAnnotation(RequestMapping.class).value();
                 logger.debug(
             	    new StringBuilder("\n")
-                        .append("* =============================================================================================\n")
+                        .append("* ============================================================================================= START\n")
                         .append("* RequestMapping: {}\n")
                         .append("* Class.Method  : {}.{}\n")
                 	    .append("* Arguments     : {}\n")
@@ -46,7 +46,7 @@ public class ControllerLogAspect {
     @After(value = "execution(* com.moon.material.*.*Controller.*(..))")
     public void afterLog(JoinPoint joinPoint) throws Throwable {
 
-        if (logger.isDebugEnabled()) logger.debug("\n* =============================================================================================\n");
+        if (logger.isDebugEnabled()) logger.debug("\n* ============================================================================================= END\n");
         
     }
     

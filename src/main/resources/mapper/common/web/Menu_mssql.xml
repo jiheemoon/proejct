@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="MenuDAO">
+
+    <!-- ##IGNORE_LOG## -> 로그에 쿼리문을 출력하지 않으려면 헤더에 정의한다. -->
+    
+    <select id="selectMenuTree" parameterType="HashMap" resultType="MenuTreeVO">/* Menu_SQL_mssql.xml MenuDAO.selectMenuTree */
+        WITH MENU_TREE AS (
+            SELECT
+                 C.MENU_ID
+                ,CAST(C.MENU_ID AS VARCHAR(1024)) AS MENU_PATH
+                ,C.MENU_NM
+                ,CAST(NULL AS VARCHAR(1024)) AS MENU_PID
+                ,C.MENU_URL
+                ,1 AS MENU_STEP
+                ,CAST(FORMAT(C.DISP_NO, '000') + '-' + C.MENU_ID AS VARCHAR(1024)) AS MENU_SORT
+                ,CAST(C.MENU_NM AS VARCHAR(1024)) AS FULL_PATH
+                ,C.MENU_ICON AS MENU_ICON
+				,C.DISP_YN AS DISP_YN
+            FROM TB_MENU_TREE C
+                LEFT OUTER JOIN TB_MENU_TREE P ON C.MENU_PID = P.MENU_ID
+            WHERE	P.MENU_ID IS NULL
+				AND	C.DISP_YN = 'Y'
+            UNION ALL
+            SELECT
+                 M.MENU_ID
+                ,CAST(T.MENU_PATH + '|' + M.MENU_ID AS VARCHAR(1024)) AS MENU_PATH
+                ,M.MENU_NM
+                ,CAST(M.MENU_PID AS VARCHAR(1024)) AS MENU_PID
+                ,M.MENU_URL
+                ,T.MENU_STEP + 1 AS MENU_STEP
+                ,CAST(T.MENU_SORT + '|' + FORMAT(M.DISP_NO, '000') + '-' + M.MENU_ID AS VARCHAR(1024)) AS MENU_SORT
+                ,CAST(T.FULL_PATH + '|' + M.MENU_NM AS VARCHAR(1024)) AS FULL_PATH
+                ,M.MENU_ICON AS MENU_ICON
+				,M.DISP_YN AS DISP_YN
+            FROM TB_MENU_TREE M
+                INNER JOIN MENU_TREE T ON M.MENU_PID = T.MENU_ID
+			WHERE	M.DISP_YN = 'Y'
+        )
+        SELECT
+             T.MENU_ID
+            ,T.MENU_NM
+            ,T.MENU_PID
+            ,T.MENU_URL
+            ,T.MENU_STEP
+            ,T.MENU_SORT
+            ,T.FULL_PATH
+            ,T.MENU_PATH<choose><when test="null != menuUrl and '' != menuUrl">
+            ,CASE WHEN 0 <![CDATA[<]]> CHARINDEX(T.MENU_PATH, (SELECT DISTINCT TOP 1 MENU_PATH FROM MENU_TREE WHERE #{menuUrl} LIKE MENU_URL + '%' AND 0 <![CDATA[<]]> LEN(LTRIM(RTRIM(ISNULL(MENU_URL, N'')))) ORDER BY MENU_PATH DESC)) THEN 'Y' ELSE 'N' END AS IS_ACTIVE
+            ,CASE WHEN EXISTS (SELECT DISTINCT TOP 1 MENU_ID FROM MENU_TREE WHERE MENU_ID = T.MENU_ID AND #{menuUrl} LIKE MENU_URL + '%' AND 0 <![CDATA[<]]> LEN(LTRIM(RTRIM(ISNULL(MENU_URL, N'')))) ORDER BY MENU_ID DESC) THEN 'Y' ELSE 'N' END AS IS_MENU</when><otherwise>
+            ,'N' AS IS_ACTIVE
+            ,'N' AS IS_MENU</otherwise></choose>
+            ,CASE WHEN NOT EXISTS (SELECT DISTINCT MENU_PATH FROM MENU_TREE WHERE MENU_PID = T.MENU_ID) THEN 'Y' ELSE 'N' END AS IS_LEAF
+            ,CASE WHEN 0 <![CDATA[<]]> LEN(LTRIM(RTRIM(ISNULL(T.MENU_URL, N'')))) THEN N'Y' ELSE N'N' END AS HAS_URL
+            ,T.MENU_ICON
+            ,T.DISP_YN
+        FROM MENU_TREE T<if test="0 lt userNo">
+            INNER JOIN (
+                SELECT R1.MENU_ID
+                FROM TB_MENU_ROLE R1
+                    INNER JOIN TB_ROLE R2 ON R1.ROLE_NO = R2.ROLE_NO
+                    INNER JOIN TB_USER_ROLE U1 ON R2.ROLE_NO = U1.ROLE_NO
+                    INNER JOIN TB_USER UT ON U1.USER_NO = UT.USER_NO
+                WHERE UT.USER_NO = #{userNo}
+                GROUP BY R1.MENU_ID
+            ) R ON T.MENU_ID = R.MENU_ID
+        WHERE T.DISP_YN = 'Y'</if>
+        ORDER BY T.MENU_STEP, T.MENU_SORT
+    </select>
+    
+</mapper>

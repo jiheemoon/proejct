@@ -10,6 +10,7 @@
 	</settings>
 	
     <typeAliases>
+        <typeAlias alias="MenuTreeVO" type="com.common.web.vo.MenuTreeVO" /> 
 <!--         <typeAlias alias="UserVO" type="com.traview.vo.UserVO" />  -->
 <!--         <typeAlias alias="PostVO" type="com.traview.vo.PostVO" />      -->
     </typeAliases>

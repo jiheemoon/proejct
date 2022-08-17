@@ -34,8 +34,15 @@
     </logger>
 
     <logger name="evident">
-        <level value="debul" />
-    </logger>
+        <level value="debug" />
+    </logger>   
+    
+    <category name="java.sql">
+        <priority value="error" />
+    </category>
+    <category name="com.ibatis">
+        <priority value="error" />
+    </category>
 
     <!-- Root Logger -->
     <root>

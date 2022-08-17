@@ -5,6 +5,21 @@ public class DeptVO extends CompVO {
 
     private static final long serialVersionUID = -1272856397808393218L;
 
+    private int termId;
+    
+    private String deptId;
+    private String deptIdOld;
+    private String deptNm;
+    private String deptPid;
+    private String deptPnm;
+    private String deptUid;
+    private int deptSeq;
+    
+    private String deptStep;
+    private String deptSort;
+    private String deptPath; // 부서경로
+    private String fullPath; // 조직도 포함경로
+    
     public DeptVO() {
         // 
     }
@@ -44,22 +59,6 @@ public class DeptVO extends CompVO {
         this.deptSeq = deptSeq;
         this.setCreateUser(createUser);
     }
-    
-    private int termId;
-    
-    private String deptId;
-    private String deptIdOld;
-    private String deptNm;
-    private String deptPid;
-    private String deptPnm;
-    private String deptUid;
-    private int deptSeq;
-    
-    private String deptStep;
-    private String deptSort;
-    private String deptPath; // 부서경로
-    private String fullPath; // 조직도 포함경로
-    
 
     /**
      * @return the termId

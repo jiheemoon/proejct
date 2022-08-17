@@ -6,6 +6,7 @@ public class UserVO extends DeptVO {
 
     private static final long serialVersionUID = -2333821795338695442L;
 
+    private int userNo;
     private String userId;
     private String userIdOld;
     private String userNm;
@@ -49,6 +50,23 @@ public class UserVO extends DeptVO {
         this.userId = userId;
     }   
     
+    /**
+     * @return the userNo
+     */
+    public int getUserNo() {
+    
+        return userNo;
+    }
+
+    
+    /**
+     * @param userNo the userNo to set
+     */
+    public void setUserNo(int userNo) {
+    
+        this.userNo = userNo;
+    }
+
     /**
      * @return the userId
      */

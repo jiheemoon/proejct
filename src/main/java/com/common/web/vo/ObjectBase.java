@@ -1,34 +1,26 @@
 package com.common.web.vo;
 
 public class ObjectBase extends PagerVO {
-    
+
     /**
-     * serialVersionUID
+     * 
      */
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 7055269890561997041L;
+
+    private String mode;
     
     private int errInt;
     private String errHex;
     private String errStr;
     private String errMsg;
-    private Integer isAuth;
-    private int isActive;
+    
     private String createUser;
     private String createName;
     private String createDate;
     private String updateUser;
     private String updateName;
     private String updateDate;
-
-    private String mode;
-    private String pageId;
-    
-    private String searchVal;
-    private String searchKey;
-
-    private String loginId;
-
-    private Integer isClosed; // 평가주기 종료 또는 마감여부
+    private String useYn;
 
     public ObjectBase() {
         
@@ -96,38 +88,59 @@ public class ObjectBase extends PagerVO {
         this.errMsg = errMsg;
     }
     
-    
-    /**
-     * @return the isActive
-     */
-    public int getIsActive() {
-    
-        return isActive;
+    public void clearError() {
+
+        this.errInt = 0;
+        this.errHex = "0";
+        this.errStr = "";
+        this.errMsg = "";
     }
     
-    /**
-     * @param isActive the isActive to set
-     */
-    public void setIsActive(int isActive) {
-    
-        this.isActive = isActive;
+    public void setError(ObjectBase rhs) {
+        if (null == rhs) {
+            clearError();
+        } else {
+            this.errInt = rhs.errInt;
+            this.errHex = rhs.errHex;
+            this.errStr = rhs.errStr;
+            this.errMsg = rhs.errMsg;
+        }
     }
     
-    /**
-     * @return the isAuth
-     */
-    public Integer getIsAuth() {
-    
-        return isAuth;
+    public void setError(Integer errInt, String errHex, String errStr) {
+
+        this.errInt = errInt;
+        this.errHex = errHex;
+        this.errStr = errStr;
+        this.errMsg = "";
     }
     
-    /**
-     * @param isAuth the isAuth to set
-     */
-    public void setIsAuth(Integer isAuth) {
-    
-        this.isAuth = isAuth;
+    public void setError(Integer errInt, String errHex, String errStr, String errMsg) {
+
+        this.errInt = errInt;
+        this.errHex = errHex;
+        this.errStr = errStr;
+        this.errMsg = errMsg;
     }
+
+    
+    /**
+     * @return the mode
+     */
+    public String getMode() {
+    
+        return mode;
+    }
+
+    
+    /**
+     * @param mode the mode to set
+     */
+    public void setMode(String mode) {
+    
+        this.mode = mode;
+    }
+
     
     /**
      * @return the createUser
@@ -144,6 +157,24 @@ public class ObjectBase extends PagerVO {
     public void setCreateUser(String createUser) {
     
         this.createUser = createUser;
+    }
+
+    
+    /**
+     * @return the createName
+     */
+    public String getCreateName() {
+    
+        return createName;
+    }
+
+    
+    /**
+     * @param createName the createName to set
+     */
+    public void setCreateName(String createName) {
+    
+        this.createName = createName;
     }
 
     
@@ -184,38 +215,6 @@ public class ObjectBase extends PagerVO {
 
     
     /**
-     * @return the updateDate
-     */
-    public String getUpdateDate() {
-    
-        return updateDate;
-    }
-
-    /**
-     * @param updateDate the updateDate to set
-     */
-    public void setUpdateDate(String updateDate) {
-    
-        this.updateDate = updateDate;
-    }
-
-    /**
-     * @return the createName
-     */
-    public String getCreateName() {
-    
-        return createName;
-    }
-    
-    /**
-     * @param createName the createName to set
-     */
-    public void setCreateName(String createName) {
-    
-        this.createName = createName;
-    }
-    
-    /**
      * @return the updateName
      */
     public String getUpdateName() {
@@ -223,6 +222,7 @@ public class ObjectBase extends PagerVO {
         return updateName;
     }
 
+    
     /**
      * @param updateName the updateName to set
      */
@@ -231,124 +231,40 @@ public class ObjectBase extends PagerVO {
         this.updateName = updateName;
     }
 
-    public void clearError() {
-
-        this.errInt = 0;
-        this.errHex = "0";
-        this.errStr = "";
-        this.errMsg = "";
-    }
-    
-    public void setError(ObjectBase rhs) {
-        if (null == rhs) {
-            clearError();
-        } else {
-            this.errInt = rhs.errInt;
-            this.errHex = rhs.errHex;
-            this.errStr = rhs.errStr;
-            this.errMsg = rhs.errMsg;
-        }
-    }
-    
-    public void setError(Integer errInt, String errHex, String errStr) {
-
-        this.errInt = errInt;
-        this.errHex = errHex;
-        this.errStr = errStr;
-        this.errMsg = "";
-    }
-    
-    public void setError(Integer errInt, String errHex, String errStr, String errMsg) {
-
-        this.errInt = errInt;
-        this.errHex = errHex;
-        this.errStr = errStr;
-        this.errMsg = errMsg;
-    }
-
-    public String getSearchVal() {
-
-        return searchVal;
-    }
-
-    public void setSearchVal(String searchVal) {
-
-        this.searchVal = searchVal;
-    }
-
-    public String getSearchKey() {
-
-        return searchKey;
-    }
-
-    public void setSearchKey(String searchKey) {
-
-        this.searchKey = searchKey;
-    }
-
-    /**
-     * @return the mode
-     */
-    public String getMode() {
-
-        return mode;
-    }
-
-    /**
-     * @param mode the mode to set
-     */
-    public void setMode(String mode) {
-
-        this.mode = mode;
-    }
-
-    /**
-     * @return the pageId
-     */
-    public String getPageId() {
-
-        return pageId;
-    }
-
-    /**
-     * @param pageId the pageId to set
-     */
-    public void setPageId(String pageId) {
-
-        this.pageId = pageId;
-    }
-
-    /**
-     * @return the loginId
-     */
-    public String getLoginId() {
-    
-        return loginId;
-    }
     
     /**
-     * @param loginId the loginId to set
+     * @return the updateDate
      */
-    public void setLoginId(String loginId) {
+    public String getUpdateDate() {
     
-        this.loginId = loginId;
+        return updateDate;
     }
 
     
     /**
-     * @return the isClosed
+     * @param updateDate the updateDate to set
      */
-    public Integer getIsClosed() {
+    public void setUpdateDate(String updateDate) {
     
-        return isClosed;
+        this.updateDate = updateDate;
     }
 
     
     /**
-     * @param isClosed the isClosed to set
+     * @return the useYn
      */
-    public void setIsClosed(Integer isClosed) {
+    public String getUseYn() {
     
-        this.isClosed = isClosed;
+        return useYn;
     }
+
+    
+    /**
+     * @param useYn the useYn to set
+     */
+    public void setUseYn(String useYn) {
+    
+        this.useYn = useYn;
+    }
+
 }

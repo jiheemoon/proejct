@@ -7,15 +7,15 @@ For licensing, see LICENSE.md or http://ckeditor.com/license
 <head>
 	<meta charset="utf-8">
 	<title>Document Properties &mdash; CKEditor Sample</title>
-	<script src="../../../ckeditor.js"></script>
-	<link rel="stylesheet" href="../../../samples/old/sample.css">
+	<script src="${CTX_PATH}/ckeditor.js"></script>
+	<link rel="stylesheet" href="${CTX_PATH}/samples/old/sample.css">
 	<meta name="ckeditor-sample-name" content="Document Properties plugin">
 	<meta name="ckeditor-sample-group" content="Plugins">
 	<meta name="ckeditor-sample-description" content="Manage various page meta data with a dialog.">
 </head>
 <body>
 	<h1 class="samples">
-		<a href="../../../samples/old/index.html">CKEditor Samples</a> &raquo; Document Properties Plugin
+		<a href="${CTX_PATH}/samples/old/index.html">CKEditor Samples</a> &raquo; Document Properties Plugin
 	</h1>
 	<div class="warning deprecated">
 		This sample is not maintained anymore. Check out its <a href="http://sdk.ckeditor.com/samples/fullpage.html">brand new version in CKEditor SDK</a>.
@@ -46,7 +46,7 @@ CKEDITOR.replace( '<em>textarea_id</em>', {
 			Setting this option is not obligatory, but in full page mode there is a strong chance that one may want be able to freely enter any HTML content in source mode without any limitations.
 		</p>
 	</div>
-	<form action="../../../samples/sample_posteddata.php" method="post">
+	<form action="${CTX_PATH}/samples/sample_posteddata.php" method="post">
 		<label for="editor1">
 			CKEditor output the entire page including content outside of
 			<code>&lt;body&gt;</code> element, so content like meta and title can be changed:

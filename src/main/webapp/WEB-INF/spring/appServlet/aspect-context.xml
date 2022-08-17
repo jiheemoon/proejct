@@ -17,7 +17,7 @@
 <!--     </aop:config> -->
 
     <!--  DAO Log Aspect -->
-<!--     <bean id="daoLogAspect" class="com.common.aspect.DaoLogAspect" /> -->
+    <bean id="daoLogAspect" class="com.common.aspect.DaoLogAspect" />
 <!--     <aop:config> -->
 <!--         <aop:aspect id="daoLogManageAspect" ref="daoLogAspect"> -->
 <!--             <aop:before pointcut="execution(* *..*DAO.*(..))" method="beforeLog" /> -->

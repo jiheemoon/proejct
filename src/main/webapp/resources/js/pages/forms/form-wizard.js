@@ -33,7 +33,7 @@ $(function () {
         bodyTag: 'fieldset',
         transitionEffect: 'slideLeft',
         onInit: function (event, currentIndex) {
-            $.AdminBSB.input.activate();
+            $.MOON.input.activate();
 
             //Set tab width
             var $tab = $(event.currentTarget).find('ul[role="tablist"] li');

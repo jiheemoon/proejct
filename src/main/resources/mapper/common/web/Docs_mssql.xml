@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="DocsDAO">
+
+    <select id="selectDocsList" parameterType="HashMap" resultType="DocsVO">/* Docs_SQL_mssql.xml DocsDAO.selectUserList */
+        SELECT 
+             D.FILE_SEQ
+            ,D.FILE_CD
+            ,D.POST_ID
+            ,D.FILE_ID
+            ,D.FILE_NO
+            ,D.FILE_TYPE
+            ,D.FILE_HASH
+            ,D.FILE_PATH
+            ,D.FILE_NAME
+            ,D.FILE_SIZE
+            ,D.REGIST_USER
+            ,R.USER_NM AS REGIST_NAME
+            ,CONVERT(CHAR(16), D.REGIST_DATE, 120) AS REGIST_DATE /* CHAR(16) YYYY-MM-DD HH:MM / CHAR(19) YYYY-MM-DD HH:MM:SS */
+            ,D.UPDATE_USER
+            ,U.USER_NM AS UPDATE_NAME
+            ,CONVERT(CHAR(16), D.UPDATE_DATE, 120) AS UPDATE_DATE
+            ,CASE WHEN D.REGIST_USER = #{userNo} THEN 1 ELSE 0 END AS IS_AUTH
+            ,D.IS_ACTIVE
+        FROM TB_DOCS D
+            LEFT OUTER JOIN TB_USER R ON D.REGIST_USER = R.USER_NO
+            LEFT OUTER JOIN TB_USER U ON D.UPDATE_USER = U.USER_NO 
+        WHERE   D.IS_ACTIVE = 1
+            AND D.POST_ID = #{postId}
+            AND D.FILE_CD = #{fileCd}
+        ORDER BY D.FILE_ID, D.FILE_NAME
+    </select>
+
+    <select id="selectDocsFile" parameterType="HashMap" resultType="DocsVO">/* Docs_SQL_mssql.xml DocsDAO.selectDocsFile */
+        SELECT 
+             D.FILE_SEQ
+            ,D.FILE_CD
+            ,D.POST_ID
+            ,D.FILE_ID
+            ,D.FILE_NO
+            ,D.FILE_TYPE
+            ,D.FILE_HASH
+            ,D.FILE_PATH
+            ,D.FILE_NAME
+            ,D.FILE_SIZE
+            ,D.REGIST_USER
+            ,R.USER_NM AS REGIST_NAME
+            ,CONVERT(CHAR(16), D.REGIST_DATE, 120) AS REGIST_DATE /* CHAR(16) YYYY-MM-DD HH:MM / CHAR(19) YYYY-MM-DD HH:MM:SS */
+            ,D.UPDATE_USER
+            ,U.USER_NM AS UPDATE_NAME
+            ,CONVERT(CHAR(16), D.UPDATE_DATE, 120) AS UPDATE_DATE
+            ,CASE WHEN D.REGIST_USER = #{userNo} THEN 1 ELSE 0 END AS IS_AUTH
+            ,D.IS_ACTIVE
+        FROM TB_DOCS D
+            LEFT OUTER JOIN TB_USER R ON D.REGIST_USER = R.USER_NO
+            LEFT OUTER JOIN TB_USER U ON D.UPDATE_USER = U.USER_NO 
+        WHERE   D.IS_ACTIVE = 1
+            AND D.FILE_SEQ = #{fileSeq}
+    </select>
+
+    <insert id="insertDocsFile" parameterType="DocsVO" useGeneratedKeys="true" keyProperty="fileSeq">/* Docs_SQL_mssql.xml DocsDAO.insertDocsFile */
+        INSERT INTO TB_DOCS (
+             FILE_CD
+            ,POST_ID
+            ,FILE_ID
+            ,FILE_NO
+            ,FILE_TYPE
+            ,FILE_HASH
+            ,FILE_PATH
+            ,FILE_NAME
+            ,FILE_SIZE
+            ,REGIST_USER
+            ,REGIST_DATE
+            ,IS_ACTIVE
+        ) VALUES (
+             #{fileCd}
+            ,#{postId}
+            ,(ISNULL((SELECT MAX(FILE_ID) FROM TB_DOCS WHERE FILE_CD = #{fileCd} AND POST_ID = #{postId}), 0)) + 1
+            ,#{fileNo}
+            ,#{fileType}
+            ,#{fileHash}
+            ,#{filePath}
+            ,#{fileName}
+            ,#{fileSize}
+            ,#{registUser}
+            ,GETDATE()
+            ,1
+        )
+    </insert>
+
+    <update id="updateDocsFileActive" parameterType="DocsVO">/* Docs_SQL_mssql.xml DocsDAO.updateDocsFileActive */
+        UPDATE TB_DOCS SET
+             UPDATE_USER    = #{updateUser}
+            ,UPDATE_DATE    = GETDATE()
+            ,IS_ACTIVE      = #{isActive}
+        WHERE   FILE_SEQ    = #{fileSeq}
+            AND IS_ACTIVE   <![CDATA[<>]]> #{isActive}
+    </update>
+    
+</mapper>

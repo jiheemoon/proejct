@@ -1,28 +1,16 @@
-﻿<!DOCTYPE html>
+﻿<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <html>
 
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <title>${SYS_NAME}</title>
-    <!-- Favicon-->
-    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
-
-    <!-- Google Fonts -->
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" />
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-
-    <!-- Bootstrap Core Css -->
-    <link rel="stylesheet" type="text/css" href="../../plugins/bootstrap/css/bootstrap.css" />
-
-    <!-- Waves Effect Css -->
-    <link rel="stylesheet" type="text/css" href="../../plugins/node-waves/waves.css" />
-
-    <!-- Animation Css -->
-    <link rel="stylesheet" type="text/css" href="../../plugins/animate-css/animate.css" />
-
-    <!-- Custom Css -->
-    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    
+    <c:import url="/GlobalPageLink.do?link=common/include/GlobalHeader" />
+    
 </head>
 
 <body class="fp-page">
@@ -57,21 +45,20 @@
         </div>
     </div>
 
-    <!-- Jquery Core Js -->
-    <script src="../../plugins/jquery/jquery.min.js?v=${SYS_VERSION}"></script>
+    <c:import url="/GlobalPageLink.do?link=common/include/GlobalFooter" />
 
     <!-- Bootstrap Core Js -->
-    <script src="../../plugins/bootstrap/js/bootstrap.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/plugins/bootstrap/js/bootstrap.js?v=${SYS_VERSION}"></script>
 
     <!-- Waves Effect Plugin Js -->
-    <script src="../../plugins/node-waves/waves.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/plugins/node-waves/waves.js?v=${SYS_VERSION}"></script>
 
     <!-- Validation Plugin Js -->
-    <script src="../../plugins/jquery-validation/jquery.validate.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/plugins/jquery-validation/jquery.validate.js?v=${SYS_VERSION}"></script>
 
     <!-- Custom Js -->
-    <script src="../../js/admin.js?v=${SYS_VERSION}"></script>
-    <script src="../../js/pages/examples/forgot-password.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/js/moon.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/js/pages/examples/forgot-password.js?v=${SYS_VERSION}"></script>
 </body>
 
 </html>

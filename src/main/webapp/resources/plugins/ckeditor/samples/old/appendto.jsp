@@ -7,7 +7,7 @@ For licensing, see LICENSE.md or http://ckeditor.com/license
 <head>
 	<meta charset="utf-8">
 	<title>Append To Page Element Using JavaScript Code &mdash; CKEditor Sample</title>
-	<script src="../../ckeditor.js?v=${SYS_VERSION}"></script>
+	<script src="${CTX_PATH}/ckeditor.js?v=${SYS_VERSION}"></script>
 	<link rel="stylesheet" type="text/css" href="sample.css">
 </head>
 <body>

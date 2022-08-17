@@ -6,7 +6,7 @@
 function initLoading() {
     $('[data-toggle="cardloading"]').on('click', function () {
         var effect = $(this).data('loadingEffect');
-        var color = $.AdminBSB.options.colors[$(this).data('loadingColor')];
+        var color = $.MOON.options.colors[$(this).data('loadingColor')];
 
         var $loading = $(this).parents('.card').waitMe({
             effect: effect,
