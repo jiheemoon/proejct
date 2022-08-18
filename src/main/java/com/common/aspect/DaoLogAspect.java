@@ -12,7 +12,7 @@ public class DaoLogAspect {
 
     private static final Logger logger = LoggerFactory.getLogger("evident");
 
-    @Before(value = "execution(* com.moon.material.*.*DAO.*(..))")
+    @Before(value = "execution(* com.material.*.*DAO.*(..))")
     public void beforeLog(JoinPoint joinPoint) throws Throwable {
         try {
             if (logger.isDebugEnabled()) {
@@ -33,7 +33,7 @@ public class DaoLogAspect {
         }
     }
     
-    @After(value = "execution(* com.moon.material.*.*DAO.*(..))")
+    @After(value = "execution(* com.material.*.*DAO.*(..))")
     public void afterLog(JoinPoint joinPoint) throws Throwable {
         
         if (logger.isDebugEnabled()) logger.debug("\n* --------------------------------------------------------------------------------------------- END\n");

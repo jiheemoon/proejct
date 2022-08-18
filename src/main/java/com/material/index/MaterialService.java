@@ -1,19 +1,19 @@
-package com.moon.material.home;
+package com.material.index;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-@Service("homeService")
-public class HomeService {
+@Service("materialService")
+public class MaterialService {
 
 	protected Logger logger = LoggerFactory.getLogger(this.getClass());
 	
     @Autowired
-    protected HomeDAO homeDAO;
+    protected MaterialDAO materialDAO;
 
 	public String selectTime() throws Exception {
-		return homeDAO.selectTime();
+		return materialDAO.selectTime();
 	}
 }

@@ -306,7 +306,7 @@
             <div class="tab-content">
                 <div role="tabpanel" class="tab-pane fade in active in active" id="skins">
                     <ul class="demo-choose-skin">
-                        <li data-theme="red" class="active">
+                        <li data-theme="red">
                             <div class="red"></div>
                             <span>Red</span>
                         </li>
@@ -444,12 +444,13 @@
 
     <section class="content">
         <div class="container-fluid">
-            <div class="block-header">
-                <h2>
-                    DIALOGS
-                    <small>Taken by <a href="https://github.com/t4t5/sweetalert" target="_blank">github.com/t4t5/sweetalert</a></small>
-                </h2>
-            </div>
+            <ol id="breadcrumb"></ol>
+<!--             <div class="block-header"> -->
+<!--                 <h2> -->
+<!--                     DIALOGS -->
+<!--                     <small>Taken by <a href="https://github.com/t4t5/sweetalert" target="_blank">github.com/t4t5/sweetalert</a></small> -->
+<!--                 </h2> -->
+<!--             </div> -->
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">

@@ -303,7 +303,7 @@
             <div class="tab-content">
                 <div role="tabpanel" class="tab-pane fade in active in active" id="skins">
                     <ul class="demo-choose-skin">
-                        <li data-theme="red" class="active">
+                        <li data-theme="red">
                             <div class="red"></div>
                             <span>Red</span>
                         </li>
@@ -440,10 +440,11 @@
     </section>
     <section class="content">
         <div class="container-fluid">
+            <ol id="breadcrumb"></ol>
             <!-- No Header Card -->
-            <div class="block-header">
-                <h2>NO HEADER CARDS</h2>
-            </div>
+<!--             <div class="block-header"> -->
+<!--                 <h2>NO HEADER CARDS</h2> -->
+<!--             </div> -->
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                     <div class="card">

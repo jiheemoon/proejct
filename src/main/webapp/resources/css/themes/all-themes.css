@@ -1,4 +1,4 @@
-﻿  
+﻿/* ============================================================================= */ 
 .theme-red .navbar {
   background-color: #F44336; }
 
@@ -46,7 +46,10 @@
   background-color: #fff; }
   .theme-red .sidebar .legal .copyright a {
     color: #F44336 !important; }
-
+    
+.theme-red .breadcrumb {background-color: #F44336;}
+.theme-red .breadcrumb * {color: #fff;}
+/* ============================================================================= */
 .theme-pink .navbar {
   background-color: #E91E63; }
 
@@ -94,7 +97,10 @@
   background-color: #fff; }
   .theme-pink .sidebar .legal .copyright a {
     color: #E91E63 !important; }
-
+    
+.theme-pink .breadcrumb {background-color: #E91E63;}
+.theme-pink .breadcrumb * {color: #fff;}
+/* ============================================================================= */
 .theme-purple .navbar {
   background-color: #9C27B0; }
 
@@ -142,7 +148,10 @@
   background-color: #fff; }
   .theme-purple .sidebar .legal .copyright a {
     color: #9C27B0 !important; }
-
+    
+.theme-purple .breadcrumb {background-color: #9C27B0;}
+.theme-purple .breadcrumb * {color: #fff;}
+/* ============================================================================= */
 .theme-deep-purple .navbar {
   background-color: #673AB7; }
 
@@ -190,7 +199,10 @@
   background-color: #fff; }
   .theme-deep-purple .sidebar .legal .copyright a {
     color: #673AB7 !important; }
-
+    
+.theme-deep-purple .breadcrumb {background-color: #673AB7;}
+.theme-deep-purple .breadcrumb * {color: #fff;}
+/* ============================================================================= */
 .theme-indigo .navbar {
   background-color: #3F51B5; }
 
@@ -238,7 +250,10 @@
   background-color: #fff; }
   .theme-indigo .sidebar .legal .copyright a {
     color: #3F51B5 !important; }
-
+    
+.theme-indigo .breadcrumb {background-color: #3F51B5;}
+.theme-indigo .breadcrumb * {color: #fff;}
+/* ============================================================================= */
 .theme-blue .navbar {
   background-color: #2196F3; }
 
@@ -286,7 +301,10 @@
   background-color: #fff; }
   .theme-blue .sidebar .legal .copyright a {
     color: #2196F3 !important; }
-
+    
+.theme-blue .breadcrumb {background-color: #2196F3;}
+.theme-blue .breadcrumb * {color: #fff;}
+/* ============================================================================= */
 .theme-light-blue .navbar {
   background-color: #03A9F4; }
 
@@ -334,7 +352,10 @@
   background-color: #fff; }
   .theme-light-blue .sidebar .legal .copyright a {
     color: #03A9F4 !important; }
-
+    
+.theme-light-blue .breadcrumb {background-color: #03A9F4;}
+.theme-light-blue .breadcrumb * {color: #fff;}
+/* ============================================================================= */
 .theme-cyan .navbar {
   background-color: #00BCD4; }
 
@@ -382,7 +403,10 @@
   background-color: #fff; }
   .theme-cyan .sidebar .legal .copyright a {
     color: #00BCD4 !important; }
-
+    
+.theme-cyan .breadcrumb {background-color: #00BCD4;}
+.theme-cyan .breadcrumb * {color: #fff;}
+/* ============================================================================= */
 .theme-teal .navbar {
   background-color: #009688; }
 
@@ -430,7 +454,10 @@
   background-color: #fff; }
   .theme-teal .sidebar .legal .copyright a {
     color: #009688 !important; }
-
+    
+.theme-teal .breadcrumb {background-color: #009688;}
+.theme-teal .breadcrumb * {color: #fff;}
+/* ============================================================================= */
 .theme-green .navbar {
   background-color: #4CAF50; }
 
@@ -478,7 +505,10 @@
   background-color: #fff; }
   .theme-green .sidebar .legal .copyright a {
     color: #4CAF50 !important; }
-
+    
+.theme-green .breadcrumb {background-color: #4CAF50;}
+.theme-green .breadcrumb * {color: #fff;}
+/* ============================================================================= */
 .theme-light-green .navbar {
   background-color: #8BC34A; }
 
@@ -526,7 +556,10 @@
   background-color: #fff; }
   .theme-light-green .sidebar .legal .copyright a {
     color: #8BC34A !important; }
-
+    
+.theme-light-green .breadcrumb {background-color: #8BC34A;}
+.theme-light-green .breadcrumb li a {color: #8BC34A;}
+/* ============================================================================= */
 .theme-lime .navbar {
   background-color: #CDDC39; }
 
@@ -574,7 +607,10 @@
   background-color: #fff; }
   .theme-lime .sidebar .legal .copyright a {
     color: #CDDC39 !important; }
-
+    
+.theme-lime .breadcrumb {background-color: #CDDC39;}
+.theme-lime .breadcrumb * {color: #fff;}
+/* ============================================================================= */
 .theme-yellow .navbar {
   background-color: #FFEB3B; }
 
@@ -622,7 +658,10 @@
   background-color: #fff; }
   .theme-yellow .sidebar .legal .copyright a {
     color: #FFEB3B !important; }
-
+    
+.theme-yellow .breadcrumb {background-color: #FFEB3B;}
+.theme-yellow .breadcrumb * {color: #fff;}
+/* ============================================================================= */
 .theme-amber .navbar {
   background-color: #FFC107; }
 
@@ -670,7 +709,10 @@
   background-color: #fff; }
   .theme-amber .sidebar .legal .copyright a {
     color: #FFC107 !important; }
-
+    
+.theme-amber .breadcrumb {background-color: #FFC107;}
+.theme-amber .breadcrumb * {color: #fff;}
+/* ============================================================================= */
 .theme-orange .navbar {
   background-color: #FF9800; }
 
@@ -718,7 +760,10 @@
   background-color: #fff; }
   .theme-orange .sidebar .legal .copyright a {
     color: #FF9800 !important; }
-
+    
+.theme-orange .breadcrumb {background-color: #FF9800;}
+.theme-orange .breadcrumb * {color: #fff;}
+/* ============================================================================= */
 .theme-deep-orange .navbar {
   background-color: #FF5722; }
 
@@ -766,7 +811,10 @@
   background-color: #fff; }
   .theme-deep-orange .sidebar .legal .copyright a {
     color: #FF5722 !important; }
-
+    
+.theme-deep-orange .breadcrumb {background-color: #FF5722;}
+.theme-deep-orange .breadcrumb * {color: #fff;}
+/* ============================================================================= */
 .theme-brown .navbar {
   background-color: #795548; }
 
@@ -814,7 +862,10 @@
   background-color: #fff; }
   .theme-brown .sidebar .legal .copyright a {
     color: #795548 !important; }
-
+    
+.theme-brown .breadcrumb {background-color: #795548;}
+.theme-brown .breadcrumb * {color: #fff;}
+/* ============================================================================= */
 .theme-grey .navbar {
   background-color: #9E9E9E; }
 
@@ -862,7 +913,10 @@
   background-color: #fff; }
   .theme-grey .sidebar .legal .copyright a {
     color: #9E9E9E !important; }
-
+    
+.theme-grey .breadcrumb {background-color: #9E9E9E;}
+.theme-grey .breadcrumb * {color: #fff;}
+/* ============================================================================= */
 .theme-blue-grey .navbar {
   background-color: #607D8B; }
 
@@ -910,7 +964,10 @@
   background-color: #fff; }
   .theme-blue-grey .sidebar .legal .copyright a {
     color: #607D8B !important; }
-
+    
+.theme-blue-grey .breadcrumb {background-color: #607D8B;}
+.theme-blue-grey .breadcrumb * {color: #fff;}
+/* ============================================================================= */
 .theme-black .navbar {
   background-color: #000; }
 
@@ -959,3 +1016,6 @@
   .theme-black .sidebar .legal .copyright a {
     color: #000 !important; }
 
+.theme-black .breadcrumb {background-color: #000;}
+.theme-black .breadcrumb * {color: #fff;}
+/* ============================================================================= */

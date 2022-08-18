@@ -303,7 +303,7 @@
             <div class="tab-content">
                 <div role="tabpanel" class="tab-pane fade in active in active" id="skins">
                     <ul class="demo-choose-skin">
-                        <li data-theme="red" class="active">
+                        <li data-theme="red">
                             <div class="red"></div>
                             <span>Red</span>
                         </li>
@@ -447,10 +447,10 @@
                         <div class="profile-header">&nbsp;</div>
                         <div class="profile-body">
                             <div class="image-area">
-                                <img src="${CTX_PATH}/images/user-lg.jpg" alt="AdminBSB - Profile Image" />
+                                <img src="${CTX_PATH}/images/user-lg.jpg" alt="Profile Image" />
                             </div>
                             <div class="content-area">
-                                <h3>Marc K. Hammond</h3>
+                                <h3>JIHEE MOON</h3>
                                 <p>Web Software Developer</p>
                                 <p>Administrator</p>
                             </div>
@@ -495,7 +495,7 @@
                                         Location
                                     </div>
                                     <div class="content">
-                                        Malibu, California
+                                        Seoul, South Korea
                                     </div>
                                 </li>
                                 <li>
@@ -545,7 +545,7 @@
                                                     </div>
                                                     <div class="media-body">
                                                         <h4 class="media-heading">
-                                                            <a href="#">Marc K. Hammond</a>
+                                                            <a href="#">JIHEE MOON</a>
                                                         </h4>
                                                         Shared publicly - 26 Oct 2018
                                                     </div>
@@ -601,7 +601,7 @@
                                                     </div>
                                                     <div class="media-body">
                                                         <h4 class="media-heading">
-                                                            <a href="#">Marc K. Hammond</a>
+                                                            <a href="#">JIHEE MOON</a>
                                                         </h4>
                                                         Shared publicly - 01 Oct 2018
                                                     </div>
@@ -653,7 +653,7 @@
                                                 <label for="NameSurname" class="col-sm-2 control-label">Name Surname</label>
                                                 <div class="col-sm-10">
                                                     <div class="form-line">
-                                                        <input type="text" class="form-control" id="NameSurname" name="NameSurname" placeholder="Name Surname" value="Marc K. Hammond" required>
+                                                        <input type="text" class="form-control" id="NameSurname" name="NameSurname" placeholder="Name Surname" value="JIHEE MOON" required>
                                                     </div>
                                                 </div>
                                             </div>

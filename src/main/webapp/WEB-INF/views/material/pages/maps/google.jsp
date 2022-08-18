@@ -303,7 +303,7 @@
             <div class="tab-content">
                 <div role="tabpanel" class="tab-pane fade in active in active" id="skins">
                     <ul class="demo-choose-skin">
-                        <li data-theme="red" class="active">
+                        <li data-theme="red">
                             <div class="red"></div>
                             <span>Red</span>
                         </li>
@@ -441,13 +441,14 @@
 
     <section class="content">
         <div class="container-fluid">
+            <ol id="breadcrumb"></ol>
             <!-- Google Maps -->
-            <div class="block-header">
-                <h2>
-                    GOOGLE MAPS
-                    <small>Taken from <a href="https://developers.google.com/maps/" target="_blank">developers.google.com/maps</a> & <a href="https://hpneo.github.io/gmaps/" target="_blank">hpneo.github.io/gmaps</a></small>
-                </h2>
-            </div>
+<!--             <div class="block-header"> -->
+<!--                 <h2> -->
+<!--                     GOOGLE MAPS -->
+<!--                     <small>Taken from <a href="https://developers.google.com/maps/" target="_blank">developers.google.com/maps</a> & <a href="https://hpneo.github.io/gmaps/" target="_blank">hpneo.github.io/gmaps</a></small> -->
+<!--                 </h2> -->
+<!--             </div> -->
             <div class="alert alert-warning">
                 You need to get <b>Google Map API Key</b> for display maps with <a href="https://developers.google.com/maps/documentation/javascript/get-api-key" class="alert-link" target="_blank">this link</a> (Also you can find documentation on same page).
             </div>

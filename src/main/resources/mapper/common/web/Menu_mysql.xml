@@ -5,14 +5,14 @@
     <!-- ##IGNORE_LOG## -> 로그에 쿼리문을 출력하지 않으려면 헤더에 정의한다. -->
     
     <select id="selectMenuTree" parameterType="HashMap" resultType="MenuTreeVO">/* Menu_mysql.xml MenuDAO.selectMenuTree */
-       WITH RECURSIVE MENU_TREE (
+         WITH RECURSIVE MENU_TREE (
         	 MENU_ID
         	,MENU_NM
         	,MENU_PID
         	,MENU_URL
         	,MENU_ICON
-        --  ,DISPLAY_NO
-        -- 	,DISPLAY_YN
+          	,DISPLAY_NO
+         	,DISPLAY_YN
         	,USE_YN
         	,MENU_STEP
         	,FULL_PATH
@@ -25,8 +25,8 @@
         		,A.MENU_PID
         		,A.MENU_URL
         		,A.MENU_ICON
-        -- 		,A.DISPLAY_NO
-        -- 		,A.DISPLAY_YN
+         		,A.DISPLAY_NO
+         		,A.DISPLAY_YN
         		,A.USE_YN
         		,1 AS MENU_STEP
         		,CAST(A.MENU_NM AS BINARY) AS FULL_PATH
@@ -41,9 +41,9 @@
         		,B.MENU_NM
         		,B.MENU_PID
         		,B.MENU_URL
-        -- 		,B.DISPLAY_NO
-        -- 		,B.DISPLAY_YN
         		,B.MENU_ICON
+         		,B.DISPLAY_NO
+         		,B.DISPLAY_YN
         		,B.USE_YN
         		,MENU_STEP + 1 AS MENU_STEP
         		,CAST(CONCAT(FULL_PATH, '>', B.MENU_NM) AS BINARY) AS FULL_PATH

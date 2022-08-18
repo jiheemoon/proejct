@@ -303,7 +303,7 @@
             <div class="tab-content">
                 <div role="tabpanel" class="tab-pane fade in active in active" id="skins">
                     <ul class="demo-choose-skin">
-                        <li data-theme="red" class="active">
+                        <li data-theme="red">
                             <div class="red"></div>
                             <span>Red</span>
                         </li>
@@ -441,12 +441,13 @@
 
     <section class="content">
         <div class="container-fluid">
-            <div class="block-header">
-                <h2>
-                    NOTIFICATIONS
-                    <small>Taken by Bootstrap Notification <a href="https://github.com/mouse0270/bootstrap-notify" target="_blank">github.com/mouse0270/bootstrap-notify</a></small>
-                </h2>
-            </div>
+            <ol id="breadcrumb"></ol>
+<!--             <div class="block-header"> -->
+<!--                 <h2> -->
+<!--                     NOTIFICATIONS -->
+<!--                     <small>Taken by Bootstrap Notification <a href="https://github.com/mouse0270/bootstrap-notify" target="_blank">github.com/mouse0270/bootstrap-notify</a></small> -->
+<!--                 </h2> -->
+<!--             </div> -->
             <div class="row clearfix">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">

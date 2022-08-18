@@ -58,6 +58,11 @@ $(document).ready(function() {
     //}
     <!-- MenuTree -->
 	$.MOON.leftSideBar.init('${CTX_PATH}','${CTL_PATH}');
+
+	var existTheme = $('body').attr('class');
+	$('.right-sidebar .demo-choose-skin li').each(function () {
+        if('theme-' + $(this).data('theme') === existTheme) $(this).addClass('active'); 
+    });
 });
 </script>
 <!-- GlobaFooter //-->

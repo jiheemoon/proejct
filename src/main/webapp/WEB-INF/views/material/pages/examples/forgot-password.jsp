@@ -16,8 +16,8 @@
 <body class="fp-page">
     <div class="fp-box">
         <div class="logo">
-            <a href="javascript:void(0);">Admin<b>BSB</b></a>
-            <small>Admin BootStrap Based - Material Design</small>
+            <a href="javascript:void(0);">${SYS_NAME}</a>
+            <small>${SYS_DESC}</small>
         </div>
         <div class="card">
             <div class="body">
@@ -38,7 +38,7 @@
                     <button class="btn btn-block btn-lg bg-pink waves-effect" type="submit">RESET MY PASSWORD</button>
 
                     <div class="row m-t-20 m-b--5 align-center">
-                        <a href="sign-in.html">Sign In!</a>
+                        <a href="sign-in.html">Sign In</a>
                     </div>
                 </form>
             </div>

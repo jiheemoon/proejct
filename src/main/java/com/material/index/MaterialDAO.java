@@ -1,13 +1,13 @@
-package com.moon.material.home;
+package com.material.index;
 
 import org.springframework.stereotype.Repository;
 
 import com.common.mapper.AbstractSqlSession;
 
 @Repository
-public class HomeDAO extends AbstractSqlSession {
+public class MaterialDAO extends AbstractSqlSession {
 
-	private final String NAMESPACE = "HomeDAO.";
+	private final String NAMESPACE = "MaterialDAO.";
 	
 	public String selectTime() throws Exception {
 		return selectOne(NAMESPACE + "selectTime");

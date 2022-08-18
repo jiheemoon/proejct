@@ -70,6 +70,7 @@ $.MOON.leftSideBar = {
 				$.each(menu, function(i, o) {
 					var step = o.menuStep || 1;
 					if ('Y' == o.isMenu) naviMenu = o;
+					if ('Y' == o.isActive) naviMenu.fullPath = o.fullPath;
 					if (1 >= step) {
 						//$.LOGGER.debug(o.menuId);
 						var li = $('<li />').attr('id', o.menuId).appendTo(ul);
@@ -78,8 +79,6 @@ $.MOON.leftSideBar = {
 						if ('Y' != o.isLeaf) atag.addClass('menu-toggle');
 						var itag = $('<i />').addClass('material-icons md-24').text(o.menuIcon || 'apps').appendTo(atag);
 						var span = $('<span />').text(o.menuNm).appendTo(atag);
-						if ('Y' == o.isActive) naviMenu.fullPath = o.fullPath;
-						if ('Y' == o.isActive) $.LOGGER.debug(naviMenu);
 					} else {
 						var li = $('#' + o.menuPid);
 						//$.LOGGER.debug(o.menuPid);
@@ -112,15 +111,15 @@ $.MOON.leftSideBar = {
 				//</div>
 				//---------------------------------------------------------------
 				var ol = $('#breadcrumb');
-				ol.addClass("breadcrumb breadcrumb-bg-black");
+				ol.addClass("breadcrumb");
 				ol.empty();
-				{
-					var li = $('<li />').appendTo(ol);
-					var atag = $('<a />').attr('href', ctxPath + '/material').text(' Home').appendTo(li);
-					var itag = $('<i />').addClass('material-icons').text('home').prependTo(atag);
-				}
+
+				var li = $('<li />').appendTo(ol);
+				var atag = $('<a />').attr('href', ctxPath + '/material').text(' Home').appendTo(li);
+				var itag = $('<i />').addClass('material-icons').text('home').prependTo(atag);
+
 				naviMenu.fullPath = naviMenu.fullPath || '';
-				var txtList = naviMenu.fullPath.split('|');
+				var txtList = naviMenu.fullPath.split('>');
 				for (var i in txtList) {
 					if (txtList[i] && 0 < txtList[i].length) {
 						var li = $('<li />').text(txtList[i]).appendTo(ol);

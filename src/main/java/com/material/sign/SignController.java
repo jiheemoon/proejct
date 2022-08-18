@@ -1,4 +1,4 @@
-package com.moon.material.sign;
+package com.material.sign;
 
 import java.text.DateFormat;
 import java.util.Date;

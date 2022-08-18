@@ -46,7 +46,7 @@
     <!-- Custom Css -->
     <link rel="stylesheet" type="text/css" href="${CTX_PATH}/css/style.css?v=${SYS_VERSION}" />
 
-    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+    <!-- Custom Themes. You can choose a theme from css/themes instead of get all themes -->
     <link rel="stylesheet" type="text/css" href="${CTX_PATH}/css/themes/all-themes.css?v=${SYS_VERSION}" />
 </head>
 
@@ -340,7 +340,7 @@
             <div class="tab-content">
                 <div role="tabpanel" class="tab-pane fade in active in active" id="skins">
                     <ul class="demo-choose-skin">
-                        <li data-theme="red" class="active">
+                        <li data-theme="red">
                             <div class="red"></div>
                             <span>Red</span>
                         </li>
@@ -478,9 +478,10 @@
 
     <section class="content">
         <div class="container-fluid">
-            <div class="block-header">
-                <h2>ADVANCED FORM ELEMENTS</h2>
-            </div>
+            <ol id="breadcrumb"></ol>
+<!--             <div class="block-header"> -->
+<!--                 <h2>ADVANCED FORM ELEMENTS</h2> -->
+<!--             </div> -->
             <!-- Color Pickers -->
             <div class="row clearfix">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">

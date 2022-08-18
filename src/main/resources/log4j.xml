@@ -12,7 +12,7 @@
     </appender>
 
     <!-- Application Loggers -->
-    <logger name="com.moon.material">
+    <logger name="com.material">
         <level value="info" />
     </logger>
 
@@ -38,10 +38,10 @@
     </logger>   
     
     <category name="java.sql">
-        <priority value="error" />
+        <priority value="debug" />
     </category>
     <category name="com.ibatis">
-        <priority value="error" />
+        <priority value="debug" />
     </category>
 
     <!-- Root Logger -->

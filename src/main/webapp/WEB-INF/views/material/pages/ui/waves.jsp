@@ -303,7 +303,7 @@
             <div class="tab-content">
                 <div role="tabpanel" class="tab-pane fade in active in active" id="skins">
                     <ul class="demo-choose-skin">
-                        <li data-theme="red" class="active">
+                        <li data-theme="red">
                             <div class="red"></div>
                             <span>Red</span>
                         </li>
@@ -441,12 +441,13 @@
 
     <section class="content">
         <div class="container-fluid">
-            <div class="block-header">
-                <h2>
-                    WAVES
-                    <small>Click effect inspired by Google's Material Design. Taken by <a href="http://fian.my.id/Waves/" target="_blank">fian.my.id/Waves</a></small>
-                </h2>
-            </div>
+            <ol id="breadcrumb"></ol>
+<!--             <div class="block-header"> -->
+<!--                 <h2> -->
+<!--                     WAVES -->
+<!--                     <small>Click effect inspired by Google's Material Design. Taken by <a href="http://fian.my.id/Waves/" target="_blank">fian.my.id/Waves</a></small> -->
+<!--                 </h2> -->
+<!--             </div> -->
             <div class="row clearfix">
                 <!-- Color Variations -->
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">

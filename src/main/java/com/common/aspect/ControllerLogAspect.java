@@ -16,7 +16,7 @@ public class ControllerLogAspect {
     
     private static final Logger logger = LoggerFactory.getLogger("evident");
     
-    @Before(value = "execution(* com.moon.material.*.*Controller.*(..))")
+    @Before(value = "execution(* com.*.*.*Controller.*(..))")
 	public void beforeLog(JoinPoint joinPoint) throws Throwable {
         try {
             if (logger.isDebugEnabled()) {
@@ -43,7 +43,7 @@ public class ControllerLogAspect {
         }
 	}
 
-    @After(value = "execution(* com.moon.material.*.*Controller.*(..))")
+    @After(value = "execution(* com.*.*.*Controller.*(..))")
     public void afterLog(JoinPoint joinPoint) throws Throwable {
 
         if (logger.isDebugEnabled()) logger.debug("\n* ============================================================================================= END\n");

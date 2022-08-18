@@ -306,7 +306,7 @@
             <div class="tab-content">
                 <div role="tabpanel" class="tab-pane fade in active in active" id="skins">
                     <ul class="demo-choose-skin">
-                        <li data-theme="red" class="active">
+                        <li data-theme="red">
                             <div class="red"></div>
                             <span>Red</span>
                         </li>
@@ -444,12 +444,13 @@
 
     <section class="content">
         <div class="container-fluid">
-            <div class="block-header">
-                <h2>
-                    JVECTORMAP
-                    <small>Taken from <a href="http://jvectormap.com/" target="_blank">jvectormap.com</a></small>
-                </h2>
-            </div>
+            <ol id="breadcrumb"></ol>
+<!--             <div class="block-header"> -->
+<!--                 <h2> -->
+<!--                     JVECTORMAP -->
+<!--                     <small>Taken from <a href="http://jvectormap.com/" target="_blank">jvectormap.com</a></small> -->
+<!--                 </h2> -->
+<!--             </div> -->
             <!-- Example -->
             <div class="row clearfix">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">

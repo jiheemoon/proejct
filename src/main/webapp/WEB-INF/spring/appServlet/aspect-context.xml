@@ -9,7 +9,7 @@
     <!--  Controller Log Aspect -->
     <bean id="controllerLogAspect" class="com.common.aspect.ControllerLogAspect" />
 <!--     <aop:config> -->
-<!--         <aop:pointcut id="controllerPointcut" expression="execution(* com.moon.material.*.*Controller.*(..))"/> -->
+<!--         <aop:pointcut id="controllerPointcut" expression="execution(* com.material.*.*Controller.*(..))"/> -->
 <!--         <aop:aspect id="controllerLogManageAspect" ref="controllerLogAspect"> -->
 <!--             <aop:before pointcut-ref="controllerPointcut" method="beforeLog" /> -->
 <!--             <aop:after pointcut-ref="controllerPointcut" method="afterLog" /> -->
