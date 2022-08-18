@@ -15,10 +15,10 @@
 
 <body class="four-zero-four">
     <div class="four-zero-four-container">
-        <div class="error-code">404</div>
-        <div class="error-message">This page doesn't exist</div>
+        <div class="error-code">403</div>
+        <div class="error-message">Access to this resource on the server is denied!</div>
         <div class="button-place">
-            <a href="${CTX_PATH}/index.html" class="btn btn-default btn-lg waves-effect">GO TO HOMEPAGE</a>
+            <a href="${CTX_PATH}/material/" class="btn btn-default btn-lg waves-effect">GO TO HOMEPAGE</a>
         </div>
     </div>
 

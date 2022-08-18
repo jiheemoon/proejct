@@ -26,11 +26,9 @@ public class MaterialController {
     }
 
     @RequestMapping(value = "/material/menu", method = RequestMethod.GET)
-    public String material(String menuUrl, Locale locale, Model model) throws Exception {
+    public String material(String url, Locale locale, Model model) throws Exception {
         
-        String url = menuUrl.replace(".do", "");
-        
-        return "material/pages"+url;
+        return url;
     }
     
 }

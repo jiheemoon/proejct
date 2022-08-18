@@ -558,7 +558,7 @@
     color: #8BC34A !important; }
     
 .theme-light-green .breadcrumb {background-color: #8BC34A;}
-.theme-light-green .breadcrumb li a {color: #8BC34A;}
+.theme-light-green .breadcrumb * {color: #fff;}
 /* ============================================================================= */
 .theme-lime .navbar {
   background-color: #CDDC39; }

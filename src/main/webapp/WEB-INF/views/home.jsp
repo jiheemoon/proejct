@@ -10,10 +10,10 @@
 <body>
     <h1>Home PAGE</h1>
 
-    <P>    The time on the server is ${serverTime}.</P>
+    <P>The time on the server is ${serverTime}.</P>
 
-    <a href="${CTX_PATH}/web">web</a>
     <a href="${CTX_PATH}/material">material</a>
+    <a href="${CTX_PATH}/web">web</a>
 
 <%--     <c:import url="/GlobalPageLink.do?link=common/include/GlobalFooter" /> --%>
 </body>

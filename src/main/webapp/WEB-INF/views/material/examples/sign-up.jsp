@@ -63,7 +63,7 @@
                     <button class="btn btn-block btn-lg bg-pink waves-effect" type="submit">SIGN UP</button>
 
                     <div class="m-t-25 m-b--5 align-center">
-                        <a href="${CTX_PATH}/material/menu?menuUrl=sign-in.do">You already have a membership?</a>
+                        <a href="${CTX_PATH}/material/menu?url=sign-in.do">You already have a membership?</a>
                     </div>
                 </form>
             </div>

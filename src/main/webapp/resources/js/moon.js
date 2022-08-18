@@ -51,15 +51,15 @@ $.MOON.leftSideBar = {
 		
 		const searchParams = new URLSearchParams(location.search);
 		$.LOGGER.debug(searchParams);
-		const menuUrl = searchParams.get('menuUrl');
-		$.LOGGER.debug(menuUrl);
+		const url = searchParams.get('url');
+		$.LOGGER.debug(url);
 		
 		ctxPath = ctxPath || '';
 		// MenuTree
 		$.MOON.json.post({
 			url: ctxPath + '/MenuTree.do',
 			data: {
-				menuUrl: menuUrl//ctlPath
+				menuUrl: url//ctlPath
 			},
 			async: false,
 			done: function(data) {
@@ -75,7 +75,7 @@ $.MOON.leftSideBar = {
 						//$.LOGGER.debug(o.menuId);
 						var li = $('<li />').attr('id', o.menuId).appendTo(ul);
 						if ('Y' == o.isActive) li.addClass('active');
-						var atag = $('<a />').attr('href', !isEmpty(o.menuUrl) ? ctxPath + '/material/menu?menuUrl=' + o.menuUrl : 'javascript:void(0);').appendTo(li);
+						var atag = $('<a />').attr('href', !isEmpty(o.menuUrl) ? ctxPath + '/material/menu?url=' + o.menuUrl : 'javascript:void(0);').appendTo(li);
 						if ('Y' != o.isLeaf) atag.addClass('menu-toggle');
 						var itag = $('<i />').addClass('material-icons md-24').text(o.menuIcon || 'apps').appendTo(atag);
 						var span = $('<span />').text(o.menuNm).appendTo(atag);
@@ -90,9 +90,9 @@ $.MOON.leftSideBar = {
 							var cLi = $('<li />').attr('id', o.menuId).appendTo(cUl);
 							if ('Y' == o.isActive) cLi.addClass('active');
 							if ('Y' == o.isLeaf) {
-								var atag = $('<a />').text(o.menuNm).attr('href', !isEmpty(o.menuUrl) ? ctxPath + '/material/menu?menuUrl=' + o.menuUrl : 'javascript:void(0);').appendTo(cLi);
+								var atag = $('<a />').text(o.menuNm).attr('href', !isEmpty(o.menuUrl) ? ctxPath + '/material/menu?url=' + o.menuUrl : 'javascript:void(0);').appendTo(cLi);
 							} else {
-								var atag = $('<a />').addClass('menu-toggle').attr('href', !isEmpty(o.menuUrl) ? ctxPath + '/material/menu?menuUrl=' + o.menuUrl : 'javascript:void(0);').appendTo(cLi);
+								var atag = $('<a />').addClass('menu-toggle').attr('href', !isEmpty(o.menuUrl) ? ctxPath + '/material/menu?url=' + o.menuUrl : 'javascript:void(0);').appendTo(cLi);
 								//var itag = $('<i />').addClass('material-icons').text('home').appendTo(atag);
 								var span = $('<span />').text(o.menuNm).appendTo(atag);
 							}
