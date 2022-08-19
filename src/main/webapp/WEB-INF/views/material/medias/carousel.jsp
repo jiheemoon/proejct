@@ -479,13 +479,13 @@
                                 <!-- Wrapper for slides -->
                                 <div class="carousel-inner" role="listbox">
                                     <div class="item active">
-                                        <img src="${CTX_PATH}/images/image-gallery/11.jpg" />
+                                        <img src="${CTX_PATH}/material/images/image-gallery/11.jpg" />
                                     </div>
                                     <div class="item">
-                                        <img src="${CTX_PATH}/images/image-gallery/12.jpg" />
+                                        <img src="${CTX_PATH}/material/images/image-gallery/12.jpg" />
                                     </div>
                                     <div class="item">
-                                        <img src="${CTX_PATH}/images/image-gallery/19.jpg" />
+                                        <img src="${CTX_PATH}/material/images/image-gallery/19.jpg" />
                                     </div>
                                 </div>
 
@@ -532,21 +532,21 @@
                                 <!-- Wrapper for slides -->
                                 <div class="carousel-inner" role="listbox">
                                     <div class="item active">
-                                        <img src="${CTX_PATH}/images/image-gallery/10.jpg" />
+                                        <img src="${CTX_PATH}/material/images/image-gallery/10.jpg" />
                                         <div class="carousel-caption">
                                             <h3>First slide label</h3>
                                             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                                         </div>
                                     </div>
                                     <div class="item">
-                                        <img src="${CTX_PATH}/images/image-gallery/12.jpg" />
+                                        <img src="${CTX_PATH}/material/images/image-gallery/12.jpg" />
                                         <div class="carousel-caption">
                                             <h3>Second slide label</h3>
                                             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                                         </div>
                                     </div>
                                     <div class="item">
-                                        <img src="${CTX_PATH}/images/image-gallery/19.jpg" />
+                                        <img src="${CTX_PATH}/material/images/image-gallery/19.jpg" />
                                         <div class="carousel-caption">
                                             <h3>Third slide label</h3>
                                             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>

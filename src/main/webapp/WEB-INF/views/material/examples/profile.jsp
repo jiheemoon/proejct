@@ -447,7 +447,7 @@
                         <div class="profile-header">&nbsp;</div>
                         <div class="profile-body">
                             <div class="image-area">
-                                <img src="${CTX_PATH}/images/user-lg.jpg" alt="Profile Image" />
+                                <img src="${CTX_PATH}/material/images/user-lg.jpg" alt="Profile Image" />
                             </div>
                             <div class="content-area">
                                 <h3>JIHEE MOON</h3>
@@ -540,7 +540,7 @@
                                                 <div class="media">
                                                     <div class="media-left">
                                                         <a href="#">
-                                                            <img src="${CTX_PATH}/images/user-lg.jpg" />
+                                                            <img src="${CTX_PATH}/material/images/user-lg.jpg" />
                                                         </a>
                                                     </div>
                                                     <div class="media-body">
@@ -557,7 +557,7 @@
                                                         <p>I am a very simple wall post. I am good at containing <a href="#">#small</a> bits of <a href="#">#information</a>. I require little more information to use effectively.</p>
                                                     </div>
                                                     <div class="post-content">
-                                                        <img src="${CTX_PATH}/images/profile-post-image.jpg" class="img-responsive" />
+                                                        <img src="${CTX_PATH}/material/images/profile-post-image.jpg" class="img-responsive" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -596,7 +596,7 @@
                                                 <div class="media">
                                                     <div class="media-left">
                                                         <a href="#">
-                                                            <img src="${CTX_PATH}/images/user-lg.jpg" />
+                                                            <img src="${CTX_PATH}/material/images/user-lg.jpg" />
                                                         </a>
                                                     </div>
                                                     <div class="media-body">

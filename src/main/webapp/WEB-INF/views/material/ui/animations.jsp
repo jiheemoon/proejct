@@ -470,7 +470,7 @@
                             </ul>
                         </div>
                         <div class="body">
-                            <img src="${CTX_PATH}/images/animation-bg.jpg" class="js-animating-object img-responsive">
+                            <img src="${CTX_PATH}/material/images/animation-bg.jpg" class="js-animating-object img-responsive">
                             <div class="demo-image-copyright">
                                 This image taken from <a href="https://unsplash.com" target="_blank">Unsplash</a>
                             </div>

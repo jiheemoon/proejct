@@ -302,7 +302,7 @@
                 
                 <sec:authorize access="isAuthenticated()">
                 <li>
-                    <img src="${CTX_PATH}/images/image-user-80/${USER.userId}.png" onerror="this.src='${CTX_PATH}/images/no_image_80.png'" title="${USER.userNm}" />
+                    <img src="${CTX_PATH}/material/images/image-user-80/${USER.userId}.png" onerror="this.src='${CTX_PATH}/images/no_image_80.png'" title="${USER.userNm}" />
                 </li>
                 <li id="myRecvCountText">
                     <a href="${CTX_PATH}/message/">
