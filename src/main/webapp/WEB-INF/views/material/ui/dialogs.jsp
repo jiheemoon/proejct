@@ -539,12 +539,12 @@
     <!-- SweetAlert Plugin Js -->
     <script src="${CTX_PATH}/plugins/sweetalert/sweetalert.min.js?v=${SYS_VERSION}"></script>
 
-    <!-- Custom Js -->
-    <script src="${CTX_PATH}/js/moon.js?v=${SYS_VERSION}"></script>
-    <script src="${CTX_PATH}/js/pages/ui/dialogs.js?v=${SYS_VERSION}"></script>
 
-    <!-- Demo Js -->
-    <script src="${CTX_PATH}/js/demo.js?v=${SYS_VERSION}"></script>
+
+    <script src="${CTX_PATH}/js/material/ui/dialogs.js?v=${SYS_VERSION}"></script>
+
+
+
 </body>
 
 </html>

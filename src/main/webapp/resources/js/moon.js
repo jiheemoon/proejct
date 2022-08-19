@@ -49,10 +49,11 @@ $.MOON.options = {
 $.MOON.leftSideBar = {
 	init: function(ctxPath, ctlPath) {
 		
+		$.LOGGER.debug('ctxPath',ctxPath);
+		$.LOGGER.debug('ctlPath',ctlPath);
 		const searchParams = new URLSearchParams(location.search);
-		$.LOGGER.debug(searchParams);
 		const url = searchParams.get('url');
-		$.LOGGER.debug(url);
+		$.LOGGER.debug('URLSearchParams',url);
 		
 		ctxPath = ctxPath || '';
 		// MenuTree

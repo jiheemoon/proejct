@@ -719,11 +719,11 @@
     <!-- Sparkline Chart Plugin Js -->
     <script src="${CTX_PATH}/plugins/jquery-sparkline/jquery.sparkline.js?v=${SYS_VERSION}"></script>
 
-    <!-- Custom Js -->
-    <script src="${CTX_PATH}/js/moon.js?v=${SYS_VERSION}"></script>
-    <script src="${CTX_PATH}/js/pages/widgets/infobox/infobox-4.js?v=${SYS_VERSION}"></script>
 
-    <!-- Demo Js -->
-    <script src="${CTX_PATH}/js/demo.js?v=${SYS_VERSION}"></script>
+
+    <script src="${CTX_PATH}/js/material/widgets/infobox/infobox-4.js?v=${SYS_VERSION}"></script>
+
+
+
 </body>
 </html>

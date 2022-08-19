@@ -260,7 +260,7 @@
             <!-- User Info -->
             <div class="user-info">
                 <div class="image">
-                    <img src="images/user.png" width="48" height="48" alt="User" />
+                    <img src="${CTX_PATH}/images/user.png" width="48" height="48" alt="User" />
                 </div>
                 <div class="info-container">
                     <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jihee Moon</div>
@@ -771,7 +771,7 @@
     <!-- Sparkline Chart Plugin Js -->
     <script type="text/javascript" src="${CTX_PATH}/plugins/jquery-sparkline/jquery.sparkline.js?v=${SYS_VERSION}"></script>
     
-    <script type="text/javascript" src="${CTX_PATH}/js/pages/index.js?v=${SYS_VERSION}"></script>
+    <script type="text/javascript" src="${CTX_PATH}/js/material/index.js?v=${SYS_VERSION}"></script>
 
 </body>
 

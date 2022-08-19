@@ -9,21 +9,7 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <title>${SYS_NAME}</title>
 
-    <!-- Favicon-->
-    <link rel="icon" href="${CTX_PATH}/favicon.ico" type="image/x-icon">
-
-    <!-- Google Fonts -->
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" />
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-
-    <!-- Bootstrap Core Css -->
-    <link rel="stylesheet" type="text/css" href="${CTX_PATH}/plugins/bootstrap/css/bootstrap.css?v=${SYS_VERSION}" />
-
-    <!-- Waves Effect Css -->
-    <link rel="stylesheet" type="text/css" href="${CTX_PATH}/plugins/node-waves/waves.css?v=${SYS_VERSION}" />
-
-    <!-- Animation Css -->
-    <link rel="stylesheet" type="text/css" href="${CTX_PATH}/plugins/animate-css/animate.css?v=${SYS_VERSION}" />
+    <c:import url="/GlobalPageLink.do?link=common/include/GlobalHeader" />
 
     <!-- Colorpicker Css -->
     <link rel="stylesheet" type="text/css" href="${CTX_PATH}/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css?v=${SYS_VERSION}" />
@@ -33,21 +19,13 @@
     <link rel="stylesheet" type="text/css" href="${CTX_PATH}/plugins/multi-select/css/multi-select.css?v=${SYS_VERSION}" />
     <!-- Bootstrap Spinner Css -->
     <link rel="stylesheet" type="text/css" href="${CTX_PATH}/plugins/jquery-spinner/css/bootstrap-spinner.css?v=${SYS_VERSION}" />
-
     <!-- Bootstrap Tagsinput Css -->
     <link rel="stylesheet" type="text/css" href="${CTX_PATH}/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css?v=${SYS_VERSION}" />
-
     <!-- Bootstrap Select Css -->
     <link rel="stylesheet" type="text/css" href="${CTX_PATH}/plugins/bootstrap-select/css/bootstrap-select.css?v=${SYS_VERSION}" />
-
     <!-- noUISlider Css -->
     <link rel="stylesheet" type="text/css" href="${CTX_PATH}/plugins/nouislider/nouislider.min.css?v=${SYS_VERSION}" />
 
-    <!-- Custom Css -->
-    <link rel="stylesheet" type="text/css" href="${CTX_PATH}/css/style.css?v=${SYS_VERSION}" />
-
-    <!-- Custom Themes. You can choose a theme from css/themes instead of get all themes -->
-    <link rel="stylesheet" type="text/css" href="${CTX_PATH}/css/themes/all-themes.css?v=${SYS_VERSION}" />
 </head>
 
 <body class="theme-black">
@@ -1287,45 +1265,26 @@
 
     <c:import url="/GlobalPageLink.do?link=common/include/GlobalFooter" />
 
-    <!-- Bootstrap Core Js -->
-    <script src="${CTX_PATH}/plugins/bootstrap/js/bootstrap.js?v=${SYS_VERSION}"></script>
-
-    <!-- Select Plugin Js -->
-    <script src="${CTX_PATH}/plugins/bootstrap-select/js/bootstrap-select.js?v=${SYS_VERSION}"></script>
-
-    <!-- Slimscroll Plugin Js -->
-    <script src="${CTX_PATH}/plugins/jquery-slimscroll/jquery.slimscroll.js?v=${SYS_VERSION}"></script>
-
     <!-- Bootstrap Colorpicker Js -->
     <script src="${CTX_PATH}/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js?v=${SYS_VERSION}"></script>
-
     <!-- Dropzone Plugin Js -->
     <script src="${CTX_PATH}/plugins/dropzone/dropzone.js?v=${SYS_VERSION}"></script>
-
     <!-- Input Mask Plugin Js -->
     <script src="${CTX_PATH}/plugins/jquery-inputmask/jquery.inputmask.bundle.js?v=${SYS_VERSION}"></script>
-
     <!-- Multi Select Plugin Js -->
     <script src="${CTX_PATH}/plugins/multi-select/js/jquery.multi-select.js?v=${SYS_VERSION}"></script>
-
     <!-- Jquery Spinner Plugin Js -->
     <script src="${CTX_PATH}/plugins/jquery-spinner/js/jquery.spinner.js?v=${SYS_VERSION}"></script>
-
     <!-- Bootstrap Tags Input Plugin Js -->
     <script src="${CTX_PATH}/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js?v=${SYS_VERSION}"></script>
-
     <!-- noUISlider Plugin Js -->
     <script src="${CTX_PATH}/plugins/nouislider/nouislider.js?v=${SYS_VERSION}"></script>
-
     <!-- Waves Effect Plugin Js -->
     <script src="${CTX_PATH}/plugins/node-waves/waves.js?v=${SYS_VERSION}"></script>
 
-    <!-- Custom Js -->
-    <script src="${CTX_PATH}/js/moon.js?v=${SYS_VERSION}"></script>
-    <script src="${CTX_PATH}/js/pages/forms/advanced-form-elements.js?v=${SYS_VERSION}"></script>
 
-    <!-- Demo Js -->
-    <script src="${CTX_PATH}/js/demo.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/js/material/forms/advanced-form-elements.js?v=${SYS_VERSION}"></script>
+
 </body>
 
 </html>

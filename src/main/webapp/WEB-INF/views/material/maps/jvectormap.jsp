@@ -503,12 +503,12 @@
     <script src="${CTX_PATH}/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js?v=${SYS_VERSION}"></script>
     <script src="${CTX_PATH}/plugins/jvectormap/jquery-jvectormap-world-mill-en.js?v=${SYS_VERSION}"></script>
 
-    <!-- Custom Js -->
-    <script src="${CTX_PATH}/js/moon.js?v=${SYS_VERSION}"></script>
-    <script src="${CTX_PATH}/js/pages/maps/jvectormap.js?v=${SYS_VERSION}"></script>
 
-    <!-- Demo Js -->
-    <script src="${CTX_PATH}/js/demo.js?v=${SYS_VERSION}"></script>
+
+    <script src="${CTX_PATH}/js/material/maps/jvectormap.js?v=${SYS_VERSION}"></script>
+
+
+
 </body>
 
 </html>

@@ -1497,12 +1497,12 @@
     <script src="${CTX_PATH}/plugins/jquery-datatable/extensions/export/buttons.html5.min.js?v=${SYS_VERSION}"></script>
     <script src="${CTX_PATH}/plugins/jquery-datatable/extensions/export/buttons.print.min.js?v=${SYS_VERSION}"></script>
 
-    <!-- Custom Js -->
-    <script src="${CTX_PATH}/js/moon.js?v=${SYS_VERSION}"></script>
-    <script src="${CTX_PATH}/js/pages/tables/jquery-datatable.js?v=${SYS_VERSION}"></script>
 
-    <!-- Demo Js -->
-    <script src="${CTX_PATH}/js/demo.js?v=${SYS_VERSION}"></script>
+
+    <script src="${CTX_PATH}/js/material/tables/jquery-datatable.js?v=${SYS_VERSION}"></script>
+
+
+
 </body>
 
 </html>

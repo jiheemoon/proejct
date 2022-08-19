@@ -47,18 +47,11 @@
 
     <c:import url="/GlobalPageLink.do?link=common/include/GlobalFooter" />
 
-    <!-- Bootstrap Core Js -->
-    <script src="${CTX_PATH}/plugins/bootstrap/js/bootstrap.js?v=${SYS_VERSION}"></script>
-
-    <!-- Waves Effect Plugin Js -->
-    <script src="${CTX_PATH}/plugins/node-waves/waves.js?v=${SYS_VERSION}"></script>
-
     <!-- Validation Plugin Js -->
     <script src="${CTX_PATH}/plugins/jquery-validation/jquery.validate.js?v=${SYS_VERSION}"></script>
 
-    <!-- Custom Js -->
-    <script src="${CTX_PATH}/js/moon.js?v=${SYS_VERSION}"></script>
-    <script src="${CTX_PATH}/js/pages/examples/forgot-password.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/js/material/examples/forgot-password.js?v=${SYS_VERSION}"></script>
+    
 </body>
 
 </html>

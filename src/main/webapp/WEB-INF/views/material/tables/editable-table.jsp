@@ -544,12 +544,12 @@
     <!-- Editable Table Plugin Js -->
     <script src="${CTX_PATH}/plugins/editable-table/mindmup-editabletable.js?v=${SYS_VERSION}"></script>
 
-    <!-- Custom Js -->
-    <script src="${CTX_PATH}/js/moon.js?v=${SYS_VERSION}"></script>
-    <script src="${CTX_PATH}/js/pages/tables/editable-table.js?v=${SYS_VERSION}"></script>
 
-    <!-- Demo Js -->
-    <script src="${CTX_PATH}/js/demo.js?v=${SYS_VERSION}"></script>
+
+    <script src="${CTX_PATH}/js/material/tables/editable-table.js?v=${SYS_VERSION}"></script>
+
+
+
 </body>
 
 </html>

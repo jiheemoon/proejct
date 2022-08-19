@@ -552,30 +552,13 @@
         </div>
     </section>
 
-    
     <c:import url="/GlobalPageLink.do?link=common/include/GlobalFooter" />
-
-    <!-- Bootstrap Core Js -->
-    <script src="${CTX_PATH}/plugins/bootstrap/js/bootstrap.js?v=${SYS_VERSION}"></script>
-
-    <!-- Select Plugin Js -->
-    <script src="${CTX_PATH}/plugins/bootstrap-select/js/bootstrap-select.js?v=${SYS_VERSION}"></script>
-
-    <!-- Slimscroll Plugin Js -->
-    <script src="${CTX_PATH}/plugins/jquery-slimscroll/jquery.slimscroll.js?v=${SYS_VERSION}"></script>
-
-    <!-- Waves Effect Plugin Js -->
-    <script src="${CTX_PATH}/plugins/node-waves/waves.js?v=${SYS_VERSION}"></script>
 
     <!-- Chart Plugins Js -->
     <script src="${CTX_PATH}/plugins/chartjs/Chart.bundle.js?v=${SYS_VERSION}"></script>
 
-    <!-- Custom Js -->
-    <script src="${CTX_PATH}/js/moon.js?v=${SYS_VERSION}"></script>
-    <script src="${CTX_PATH}/js/pages/charts/chartjs.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/js/material/charts/chartjs.js?v=${SYS_VERSION}"></script>
 
-    <!-- Demo Js -->
-    <script src="${CTX_PATH}/js/demo.js?v=${SYS_VERSION}"></script>
 </body>
 
 </html>

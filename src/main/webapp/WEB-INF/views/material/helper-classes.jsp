@@ -802,14 +802,14 @@
                             Putting classes are <code>.ie10, .ie11, .edge, .opera, .chrome, .firefox, .safari</code> to class inside of <code>html</code> element. So you can create new classes for run only you specified browser(s).
                             <p class="m-t-25"><b>Example</b></p>
                             <pre><code class="language-css"><b>/* It will be work only IE10 */</b>
-html.ie10 .menu .list {
-   background-color: #CC0000;
-}
-<b>/* It will be work only Google Chrome */</b>
-html.chrome .right-sidebar .header {
-   font-size: 15px;
-   font-weight: bold;
-}</code></pre><p>&nbsp;</p>
+                                html.ie10 .menu .list {
+                                   background-color: #CC0000;
+                                }
+                                <b>/* It will be work only Google Chrome */</b>
+                                html.chrome .right-sidebar .header {
+                                   font-size: 15px;
+                                   font-weight: bold;
+                                }</code></pre><p>&nbsp;</p>
                         </div>
                     </div>
                 </div>
@@ -820,23 +820,6 @@ html.chrome .right-sidebar .header {
 
     <c:import url="/GlobalPageLink.do?link=common/include/GlobalFooter" />
 
-    <!-- Bootstrap Core Js -->
-    <script src="${CTX_PATH}/plugins/bootstrap/js/bootstrap.js?v=${SYS_VERSION}"></script>
-
-    <!-- Select Plugin Js -->
-    <script src="${CTX_PATH}/plugins/bootstrap-select/js/bootstrap-select.js?v=${SYS_VERSION}"></script>
-
-    <!-- Slimscroll Plugin Js -->
-    <script src="${CTX_PATH}/plugins/jquery-slimscroll/jquery.slimscroll.js?v=${SYS_VERSION}"></script>
-
-    <!-- Waves Effect Plugin Js -->
-    <script src="${CTX_PATH}/plugins/node-waves/waves.js?v=${SYS_VERSION}"></script>
-
-    <!-- Custom Js -->
-    <script src="${CTX_PATH}/js/moon.js?v=${SYS_VERSION}"></script>
-
-    <!-- Demo Js -->
-    <script src="${CTX_PATH}/js/demo.js?v=${SYS_VERSION}"></script>
 </body>
 
 </html>

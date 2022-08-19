@@ -8,30 +8,12 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <title>${SYS_NAME}</title>
-    <!-- Favicon-->
-    <link rel="icon" href="${CTX_PATH}/favicon.ico" type="image/x-icon">
 
-    <!-- Google Fonts -->
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" />
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-
-    <!-- Bootstrap Core Css -->
-    <link rel="stylesheet" type="text/css" href="${CTX_PATH}/plugins/bootstrap/css/bootstrap.css?v=${SYS_VERSION}" />
-
-    <!-- Waves Effect Css -->
-    <link rel="stylesheet" type="text/css" href="${CTX_PATH}/plugins/node-waves/waves.css?v=${SYS_VERSION}" />
-
-    <!-- Animation Css -->
-    <link rel="stylesheet" type="text/css" href="${CTX_PATH}/plugins/animate-css/animate.css?v=${SYS_VERSION}" />
+    <c:import url="/GlobalPageLink.do?link=common/include/GlobalHeader" />
 
     <!-- Sweet Alert Css -->
     <link rel="stylesheet" type="text/css" href="${CTX_PATH}/plugins/sweetalert/sweetalert.css?v=${SYS_VERSION}" />
 
-    <!-- Custom Css -->
-    <link rel="stylesheet" type="text/css" href="${CTX_PATH}/css/style.css?v=${SYS_VERSION}" />
-
-    <!-- Custom Themes. You can choose a theme from css/themes instead of get all themes -->
-    <link rel="stylesheet" type="text/css" href="${CTX_PATH}/css/themes/all-themes.css?v=${SYS_VERSION}" />
 </head>
 
 <body class="theme-black">
@@ -681,12 +663,12 @@
     <!-- Waves Effect Plugin Js -->
     <script src="${CTX_PATH}/plugins/node-waves/waves.js?v=${SYS_VERSION}"></script>
 
-    <!-- Custom Js -->
-    <script src="${CTX_PATH}/js/moon.js?v=${SYS_VERSION}"></script>
-    <script src="${CTX_PATH}/js/pages/forms/form-validation.js?v=${SYS_VERSION}"></script>
 
-    <!-- Demo Js -->
-    <script src="${CTX_PATH}/js/demo.js?v=${SYS_VERSION}"></script>
+
+    <script src="${CTX_PATH}/js/material/forms/form-validation.js?v=${SYS_VERSION}"></script>
+
+
+
 </body>
 
 </html>

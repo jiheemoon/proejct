@@ -725,11 +725,11 @@
     <!-- Wait Me Plugin Js -->
     <script src="${CTX_PATH}/plugins/waitme/waitMe.js?v=${SYS_VERSION}"></script>
 
-    <!-- Custom Js -->
-    <script src="${CTX_PATH}/js/moon.js?v=${SYS_VERSION}"></script>
-    <script src="${CTX_PATH}/js/pages/cards/colored.js?v=${SYS_VERSION}"></script>
 
-    <!-- Demo Js -->
-    <script src="${CTX_PATH}/js/demo.js?v=${SYS_VERSION}"></script>
+
+    <script src="${CTX_PATH}/js/material/cards/colored.js?v=${SYS_VERSION}"></script>
+
+
+
 </body>
 </html>

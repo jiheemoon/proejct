@@ -6,7 +6,6 @@
 <!--     <a href="#" title="맨위로"><i class="material-icons">arrow_upward</i></a> -->
 <!-- </div> -->
 
-<!-- Javascript plugins/jquery/jquery.js -->
 <!-- Jquery Core Js -->
 <script type="text/javascript" src="${CTX_PATH}/plugins/jquery/jquery.js?v=${SYS_VERSION}"></script>
 <script type="text/javascript" src="${CTX_PATH}/plugins/jquery/jquery.min.js?v=${SYS_VERSION}"></script>
@@ -17,18 +16,22 @@
 <script type="text/javascript" src="${CTX_PATH}/js/jquery-logger.js?v=${SYS_VERSION}"></script>
 <script type="text/javascript" src="${CTX_PATH}/js/jquery-common.js?v=${SYS_VERSION}"></script>
 <%-- <script type="text/javascript" src="${CTX_PATH}/js/jquery-post.js?v=${SYS_VERSION}"></script> --%>
+
 <script type="text/javascript" src="${CTX_PATH}/plugins/jquery-ui/jquery-ui.min.js?v=${SYS_VERSION}" ></script>
 <script type="text/javascript" src="${CTX_PATH}/plugins/jquery-cookie/jquery.cookie.js?v=${SYS_VERSION}"></script>
-<script type="text/javascript" src="${CTX_PATH}/plugins/jquery-slimscroll/jquery.slimscroll.js?v=${SYS_VERSION}"></script>
-<script type="text/javascript" src="${CTX_PATH}/plugins/jquery-spinner/js/jquery.spinner.js?v=${SYS_VERSION}"></script>
 <!-- Bootstrap Core Js -->
 <script type="text/javascript" src="${CTX_PATH}/plugins/bootstrap/js/bootstrap.js?v=${SYS_VERSION}"></script>
 <script type="text/javascript" src="${CTX_PATH}/plugins/bootstrap-notify/bootstrap-notify.js?v=${SYS_VERSION}"></script>
+<!-- Select Plugin Js -->
 <script type="text/javascript" src="${CTX_PATH}/plugins/bootstrap-select/js/bootstrap-select.js?v=${SYS_VERSION}"></script>
 <script type="text/javascript" src="${CTX_PATH}/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js?v=${SYS_VERSION}"></script>
 <%-- <script type="text/javascript" src="${CTX_PATH}/plugins/bootstrap-treeview/bootstrap-treeview-patternfly.js?v=${SYS_VERSION}"></script> --%>
 <%-- <script type="text/javascript" src="${CTX_PATH}/plugins/bootstrap-datepicker-air/js/datepicker.js?v=${SYS_VERSION}"></script> --%>
 <script type="text/javascript" src="${CTX_PATH}/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js?v=${SYS_VERSION}"></script>
+<!-- Slimscroll Plugin Js -->
+<script type="text/javascript" src="${CTX_PATH}/plugins/jquery-slimscroll/jquery.slimscroll.js?v=${SYS_VERSION}"></script>
+<script type="text/javascript" src="${CTX_PATH}/plugins/jquery-spinner/js/jquery.spinner.js?v=${SYS_VERSION}"></script>
+<!-- Waves Effect Plugin Js -->
 <script type="text/javascript" src="${CTX_PATH}/plugins/node-waves/waves.js?v=${SYS_VERSION}"></script>
 <script type="text/javascript" src="${CTX_PATH}/plugins/waitme/waitMe.js?v=${SYS_VERSION}"></script>
 <%-- <script type="text/javascript" src="${CTX_PATH}/plugins/sweetalert/sweetalert.js?v=${SYS_VERSION}"></script> --%>
@@ -36,8 +39,8 @@
 <script type="text/javascript" src="${CTX_PATH}/plugins/autosize/autosize.js?v=${SYS_VERSION}"></script>
 <script type="text/javascript" src="${CTX_PATH}/plugins/multi-select/js/jquery.multi-select.js?v=${SYS_VERSION}"></script>
 <%-- <script type="text/javascript" src="${CTX_PATH}/plugins/jquery-autoNumeric/autoNumeric.js?v=${SYS_VERSION}"></script> --%>
-<script type="text/javascript" src="${CTX_PATH}/js/pages/forms/basic-form-elements.js?v=${SYS_VERSION}"></script>
-<%-- <script type="text/javascript" src="${CTX_PATH}/js/pages/tables/jquery-table-select.js?v=${SYS_VERSION}"></script> --%>
+<script type="text/javascript" src="${CTX_PATH}/js/material/forms/basic-form-elements.js?v=${SYS_VERSION}"></script>
+<%-- <script type="text/javascript" src="${CTX_PATH}/js/material/tables/jquery-table-select.js?v=${SYS_VERSION}"></script> --%>
 <!-- Custom Js -->
 <%-- <script type="text/javascript" src="${CTX_PATH}/js/jquery-ie.js?v=${SYS_VERSION}"></script> --%>
 <%-- <script type="text/javascript" src="${CTX_PATH}/js/jquery-skin.js?v=${SYS_VERSION}"></script> --%>
