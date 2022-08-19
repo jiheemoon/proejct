@@ -10,7 +10,7 @@
     <title>${SYS_NAME}</title>
 
     <!-- Morris Css -->
-    <link rel="stylesheet" type="text/css" href="${CTX_PATH}/plugins/morrisjs/morris.css?v=${SYS_VERSION}" />
+    <link rel="stylesheet" type="text/css" href="${CTX_PATH}/material/plugins/morrisjs/morris.css?v=${SYS_VERSION}" />
 
     <c:import url="/GlobalPageLink.do?link=common/include/GlobalHeader" />
     
@@ -260,7 +260,7 @@
             <!-- User Info -->
             <div class="user-info">
                 <div class="image">
-                    <img src="${CTX_PATH}/images/user.png" width="48" height="48" alt="User" />
+                    <img src="${CTX_PATH}/material/images/user.png" width="48" height="48" alt="User" />
                 </div>
                 <div class="info-container">
                     <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jihee Moon</div>
@@ -463,20 +463,20 @@
     
     <c:import url="/GlobalPageLink.do?link=common/include/GlobalFooter" />
     <!-- Jquery CountTo Plugin Js -->
-    <script type="text/javascript" src="${CTX_PATH}/plugins/jquery-countto/jquery.countTo.js?v=${SYS_VERSION}"></script>
+    <script type="text/javascript" src="${CTX_PATH}/material/plugins/jquery-countto/jquery.countTo.js?v=${SYS_VERSION}"></script>
     <!-- Morris Plugin Js -->
-    <script type="text/javascript" src="${CTX_PATH}/plugins/raphael/raphael.min.js?v=${SYS_VERSION}"></script>
-    <script type="text/javascript" src="${CTX_PATH}/plugins/morrisjs/morris.js?v=${SYS_VERSION}"></script>
+    <script type="text/javascript" src="${CTX_PATH}/material/plugins/raphael/raphael.min.js?v=${SYS_VERSION}"></script>
+    <script type="text/javascript" src="${CTX_PATH}/material/plugins/morrisjs/morris.js?v=${SYS_VERSION}"></script>
     <!-- ChartJs -->
-    <script type="text/javascript" src="${CTX_PATH}/plugins/chartjs/Chart.bundle.js?v=${SYS_VERSION}"></script>
+    <script type="text/javascript" src="${CTX_PATH}/material/plugins/chartjs/Chart.bundle.js?v=${SYS_VERSION}"></script>
     <!-- Flot Charts Plugin Js -->
-    <script type="text/javascript" src="${CTX_PATH}/plugins/flot-charts/jquery.flot.js?v=${SYS_VERSION}"></script>
-    <script type="text/javascript" src="${CTX_PATH}/plugins/flot-charts/jquery.flot.resize.js?v=${SYS_VERSION}"></script>
-    <script type="text/javascript" src="${CTX_PATH}/plugins/flot-charts/jquery.flot.pie.js?v=${SYS_VERSION}"></script>
-    <script type="text/javascript" src="${CTX_PATH}/plugins/flot-charts/jquery.flot.categories.js?v=${SYS_VERSION}"></script>
-    <script type="text/javascript" src="${CTX_PATH}/plugins/flot-charts/jquery.flot.time.js?v=${SYS_VERSION}"></script>
+    <script type="text/javascript" src="${CTX_PATH}/material/plugins/flot-charts/jquery.flot.js?v=${SYS_VERSION}"></script>
+    <script type="text/javascript" src="${CTX_PATH}/material/plugins/flot-charts/jquery.flot.resize.js?v=${SYS_VERSION}"></script>
+    <script type="text/javascript" src="${CTX_PATH}/material/plugins/flot-charts/jquery.flot.pie.js?v=${SYS_VERSION}"></script>
+    <script type="text/javascript" src="${CTX_PATH}/material/plugins/flot-charts/jquery.flot.categories.js?v=${SYS_VERSION}"></script>
+    <script type="text/javascript" src="${CTX_PATH}/material/plugins/flot-charts/jquery.flot.time.js?v=${SYS_VERSION}"></script>
     <!-- Sparkline Chart Plugin Js -->
-    <script type="text/javascript" src="${CTX_PATH}/plugins/jquery-sparkline/jquery.sparkline.js?v=${SYS_VERSION}"></script>
+    <script type="text/javascript" src="${CTX_PATH}/material/plugins/jquery-sparkline/jquery.sparkline.js?v=${SYS_VERSION}"></script>
     
 </body>
 

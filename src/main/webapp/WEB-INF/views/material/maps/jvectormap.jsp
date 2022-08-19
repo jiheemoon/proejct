@@ -10,7 +10,7 @@
     <title>${SYS_NAME}</title>
     
     <!-- JVectorMap Css -->
-    <link rel="stylesheet" type="text/css" href="${CTX_PATH}/plugins/jvectormap/jquery-jvectormap-1.2.2.css?v=${SYS_VERSION}" />
+    <link rel="stylesheet" type="text/css" href="${CTX_PATH}/material/plugins/jvectormap/jquery-jvectormap-1.2.2.css?v=${SYS_VERSION}" />
     
     <c:import url="/GlobalPageLink.do?link=common/include/GlobalHeader" />
     
@@ -260,7 +260,7 @@
             <!-- User Info -->
             <div class="user-info">
                 <div class="image">
-                    <img src="${CTX_PATH}/images/user.png" width="48" height="48" alt="User" />
+                    <img src="${CTX_PATH}/material/images/user.png" width="48" height="48" alt="User" />
                 </div>
                 <div class="info-container">
                     <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jihee Moon</div>
@@ -485,27 +485,27 @@
     <c:import url="/GlobalPageLink.do?link=common/include/GlobalFooter" />
 
     <!-- Bootstrap Core Js -->
-    <script src="${CTX_PATH}/plugins/bootstrap/js/bootstrap.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/plugins/bootstrap/js/bootstrap.js?v=${SYS_VERSION}"></script>
 
     <!-- Google Maps API Js -->
     <script src="https://maps.google.com/maps/api/js?v=3&sensor=false"></script>
 
     <!-- Select Plugin Js -->
-    <script src="${CTX_PATH}/plugins/bootstrap-select/js/bootstrap-select.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/plugins/bootstrap-select/js/bootstrap-select.js?v=${SYS_VERSION}"></script>
 
     <!-- Slimscroll Plugin Js -->
-    <script src="${CTX_PATH}/plugins/jquery-slimscroll/jquery.slimscroll.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/plugins/jquery-slimscroll/jquery.slimscroll.js?v=${SYS_VERSION}"></script>
 
     <!-- Waves Effect Plugin Js -->
-    <script src="${CTX_PATH}/plugins/node-waves/waves.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/plugins/node-waves/waves.js?v=${SYS_VERSION}"></script>
 
     <!-- JVectorMap Plugin Js -->
-    <script src="${CTX_PATH}/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js?v=${SYS_VERSION}"></script>
-    <script src="${CTX_PATH}/plugins/jvectormap/jquery-jvectormap-world-mill-en.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/plugins/jvectormap/jquery-jvectormap-world-mill-en.js?v=${SYS_VERSION}"></script>
 
 
 
-    <script src="${CTX_PATH}/js/material/maps/jvectormap.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/js/maps/jvectormap.js?v=${SYS_VERSION}"></script>
 
 
 

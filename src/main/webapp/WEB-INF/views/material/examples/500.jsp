@@ -25,10 +25,10 @@
     <c:import url="/GlobalPageLink.do?link=common/include/GlobalFooter" />
 
     <!-- Bootstrap Core Js -->
-    <script src="${CTX_PATH}/plugins/bootstrap/js/bootstrap.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/plugins/bootstrap/js/bootstrap.js?v=${SYS_VERSION}"></script>
 
     <!-- Waves Effect Plugin Js -->
-    <script src="${CTX_PATH}/plugins/node-waves/waves.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/plugins/node-waves/waves.js?v=${SYS_VERSION}"></script>
 </body>
 
 </html>

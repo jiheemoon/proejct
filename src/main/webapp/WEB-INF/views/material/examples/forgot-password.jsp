@@ -48,9 +48,9 @@
     <c:import url="/GlobalPageLink.do?link=common/include/GlobalFooter" />
 
     <!-- Validation Plugin Js -->
-    <script src="${CTX_PATH}/plugins/jquery-validation/jquery.validate.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/plugins/jquery-validation/jquery.validate.js?v=${SYS_VERSION}"></script>
 
-    <script src="${CTX_PATH}/js/material/examples/forgot-password.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/js/examples/forgot-password.js?v=${SYS_VERSION}"></script>
     
 </body>
 

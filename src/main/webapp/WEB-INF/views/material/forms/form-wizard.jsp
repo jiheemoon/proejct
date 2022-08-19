@@ -12,7 +12,7 @@
     <c:import url="/GlobalPageLink.do?link=common/include/GlobalHeader" />
 
     <!-- Sweet Alert Css -->
-    <link rel="stylesheet" type="text/css" href="${CTX_PATH}/plugins/sweetalert/sweetalert.css?v=${SYS_VERSION}" />
+    <link rel="stylesheet" type="text/css" href="${CTX_PATH}/material/plugins/sweetalert/sweetalert.css?v=${SYS_VERSION}" />
 
 </head>
 
@@ -260,7 +260,7 @@
             <!-- User Info -->
             <div class="user-info">
                 <div class="image">
-                    <img src="${CTX_PATH}/images/user.png" width="48" height="48" alt="User" />
+                    <img src="${CTX_PATH}/material/images/user.png" width="48" height="48" alt="User" />
                 </div>
                 <div class="info-container">
                     <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jihee Moon</div>
@@ -690,29 +690,29 @@
     <c:import url="/GlobalPageLink.do?link=common/include/GlobalFooter" />
 
     <!-- Bootstrap Core Js -->
-    <script src="${CTX_PATH}/plugins/bootstrap/js/bootstrap.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/plugins/bootstrap/js/bootstrap.js?v=${SYS_VERSION}"></script>
 
     <!-- Select Plugin Js -->
-    <script src="${CTX_PATH}/plugins/bootstrap-select/js/bootstrap-select.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/plugins/bootstrap-select/js/bootstrap-select.js?v=${SYS_VERSION}"></script>
 
     <!-- Slimscroll Plugin Js -->
-    <script src="${CTX_PATH}/plugins/jquery-slimscroll/jquery.slimscroll.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/plugins/jquery-slimscroll/jquery.slimscroll.js?v=${SYS_VERSION}"></script>
 
     <!-- Jquery Validation Plugin Css -->
-    <script src="${CTX_PATH}/plugins/jquery-validation/jquery.validate.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/plugins/jquery-validation/jquery.validate.js?v=${SYS_VERSION}"></script>
 
     <!-- JQuery Steps Plugin Js -->
-    <script src="${CTX_PATH}/plugins/jquery-steps/jquery.steps.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/plugins/jquery-steps/jquery.steps.js?v=${SYS_VERSION}"></script>
 
     <!-- Sweet Alert Plugin Js -->
-    <script src="${CTX_PATH}/plugins/sweetalert/sweetalert.min.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/plugins/sweetalert/sweetalert.min.js?v=${SYS_VERSION}"></script>
 
     <!-- Waves Effect Plugin Js -->
-    <script src="${CTX_PATH}/plugins/node-waves/waves.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/plugins/node-waves/waves.js?v=${SYS_VERSION}"></script>
 
 
 
-    <script src="${CTX_PATH}/js/material/forms/form-wizard.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/js/forms/form-wizard.js?v=${SYS_VERSION}"></script>
 
 
 

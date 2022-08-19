@@ -10,7 +10,7 @@
     <title>${SYS_NAME}</title>
     
     <!-- Light Gallery Plugin Css -->
-    <link rel="stylesheet" type="text/css" href="${CTX_PATH}/plugins/light-gallery/css/lightgallery.css?v=${SYS_VERSION}" />
+    <link rel="stylesheet" type="text/css" href="${CTX_PATH}/material/plugins/light-gallery/css/lightgallery.css?v=${SYS_VERSION}" />
 
     <c:import url="/GlobalPageLink.do?link=common/include/GlobalHeader" />
     
@@ -260,7 +260,7 @@
             <!-- User Info -->
             <div class="user-info">
                 <div class="image">
-                    <img src="${CTX_PATH}/images/user.png" width="48" height="48" alt="User" />
+                    <img src="${CTX_PATH}/material/images/user.png" width="48" height="48" alt="User" />
                 </div>
                 <div class="info-container">
                     <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jihee Moon</div>
@@ -476,102 +476,102 @@
                         <div class="body">
                             <div id="aniimated-thumbnials" class="list-unstyled row clearfix">
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="${CTX_PATH}/images/image-gallery/1.jpg" data-sub-html="Demo Description">
+                                    <a href="${CTX_PATH}/material/images/image-gallery/1.jpg" data-sub-html="Demo Description">
                                         <img class="img-responsive thumbnail" src="${CTX_PATH}/images/image-gallery/thumb/thumb-1.jpg">
                                     </a>
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="${CTX_PATH}/images/image-gallery/2.jpg" data-sub-html="Demo Description">
+                                    <a href="${CTX_PATH}/material/images/image-gallery/2.jpg" data-sub-html="Demo Description">
                                         <img class="img-responsive thumbnail" src="${CTX_PATH}/images/image-gallery/thumb/thumb-2.jpg">
                                     </a>
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="${CTX_PATH}/images/image-gallery/3.jpg" data-sub-html="Demo Description">
+                                    <a href="${CTX_PATH}/material/images/image-gallery/3.jpg" data-sub-html="Demo Description">
                                         <img class="img-responsive thumbnail" src="${CTX_PATH}/images/image-gallery/thumb/thumb-3.jpg">
                                     </a>
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="${CTX_PATH}/images/image-gallery/4.jpg" data-sub-html="Demo Description">
+                                    <a href="${CTX_PATH}/material/images/image-gallery/4.jpg" data-sub-html="Demo Description">
                                         <img class="img-responsive thumbnail" src="${CTX_PATH}/images/image-gallery/thumb/thumb-4.jpg">
                                     </a>
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="${CTX_PATH}/images/image-gallery/5.jpg" data-sub-html="Demo Description">
+                                    <a href="${CTX_PATH}/material/images/image-gallery/5.jpg" data-sub-html="Demo Description">
                                         <img class="img-responsive thumbnail" src="${CTX_PATH}/images/image-gallery/thumb/thumb-5.jpg">
                                     </a>
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="${CTX_PATH}/images/image-gallery/6.jpg" data-sub-html="Demo Description">
+                                    <a href="${CTX_PATH}/material/images/image-gallery/6.jpg" data-sub-html="Demo Description">
                                         <img class="img-responsive thumbnail" src="${CTX_PATH}/images/image-gallery/thumb/thumb-6.jpg">
                                     </a>
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="${CTX_PATH}/images/image-gallery/7.jpg" data-sub-html="Demo Description">
+                                    <a href="${CTX_PATH}/material/images/image-gallery/7.jpg" data-sub-html="Demo Description">
                                         <img class="img-responsive thumbnail" src="${CTX_PATH}/images/image-gallery/thumb/thumb-7.jpg">
                                     </a>
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="${CTX_PATH}/images/image-gallery/8.jpg" data-sub-html="Demo Description">
+                                    <a href="${CTX_PATH}/material/images/image-gallery/8.jpg" data-sub-html="Demo Description">
                                         <img class="img-responsive thumbnail" src="${CTX_PATH}/images/image-gallery/thumb/thumb-8.jpg">
                                     </a>
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="${CTX_PATH}/images/image-gallery/9.jpg" data-sub-html="Demo Description">
+                                    <a href="${CTX_PATH}/material/images/image-gallery/9.jpg" data-sub-html="Demo Description">
                                         <img class="img-responsive thumbnail" src="${CTX_PATH}/images/image-gallery/thumb/thumb-9.jpg">
                                     </a>
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="${CTX_PATH}/images/image-gallery/10.jpg" data-sub-html="Demo Description">
+                                    <a href="${CTX_PATH}/material/images/image-gallery/10.jpg" data-sub-html="Demo Description">
                                         <img class="img-responsive thumbnail" src="${CTX_PATH}/images/image-gallery/thumb/thumb-10.jpg">
                                     </a>
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="${CTX_PATH}/images/image-gallery/11.jpg" data-sub-html="Demo Description">
+                                    <a href="${CTX_PATH}/material/images/image-gallery/11.jpg" data-sub-html="Demo Description">
                                         <img class="img-responsive thumbnail" src="${CTX_PATH}/images/image-gallery/thumb/thumb-11.jpg">
                                     </a>
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="${CTX_PATH}/images/image-gallery/12.jpg" data-sub-html="Demo Description">
+                                    <a href="${CTX_PATH}/material/images/image-gallery/12.jpg" data-sub-html="Demo Description">
                                         <img class="img-responsive thumbnail" src="${CTX_PATH}/images/image-gallery/thumb/thumb-12.jpg">
                                     </a>
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="${CTX_PATH}/images/image-gallery/13.jpg" data-sub-html="Demo Description">
+                                    <a href="${CTX_PATH}/material/images/image-gallery/13.jpg" data-sub-html="Demo Description">
                                         <img class="img-responsive thumbnail" src="${CTX_PATH}/images/image-gallery/thumb/thumb-13.jpg">
                                     </a>
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="${CTX_PATH}/images/image-gallery/14.jpg" data-sub-html="Demo Description">
+                                    <a href="${CTX_PATH}/material/images/image-gallery/14.jpg" data-sub-html="Demo Description">
                                         <img class="img-responsive thumbnail" src="${CTX_PATH}/images/image-gallery/thumb/thumb-14.jpg">
                                     </a>
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="${CTX_PATH}/images/image-gallery/15.jpg" data-sub-html="Demo Description">
+                                    <a href="${CTX_PATH}/material/images/image-gallery/15.jpg" data-sub-html="Demo Description">
                                         <img class="img-responsive thumbnail" src="${CTX_PATH}/images/image-gallery/thumb/thumb-15.jpg">
                                     </a>
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="${CTX_PATH}/images/image-gallery/16.jpg" data-sub-html="Demo Description">
+                                    <a href="${CTX_PATH}/material/images/image-gallery/16.jpg" data-sub-html="Demo Description">
                                         <img class="img-responsive thumbnail" src="${CTX_PATH}/images/image-gallery/thumb/thumb-16.jpg">
                                     </a>
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="${CTX_PATH}/images/image-gallery/17.jpg" data-sub-html="Demo Description">
+                                    <a href="${CTX_PATH}/material/images/image-gallery/17.jpg" data-sub-html="Demo Description">
                                         <img class="img-responsive thumbnail" src="${CTX_PATH}/images/image-gallery/thumb/thumb-17.jpg">
                                     </a>
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="${CTX_PATH}/images/image-gallery/18.jpg" data-sub-html="Demo Description">
+                                    <a href="${CTX_PATH}/material/images/image-gallery/18.jpg" data-sub-html="Demo Description">
                                         <img class="img-responsive thumbnail" src="${CTX_PATH}/images/image-gallery/thumb/thumb-18.jpg">
                                     </a>
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="${CTX_PATH}/images/image-gallery/19.jpg" data-sub-html="Demo Description">
+                                    <a href="${CTX_PATH}/material/images/image-gallery/19.jpg" data-sub-html="Demo Description">
                                         <img class="img-responsive thumbnail" src="${CTX_PATH}/images/image-gallery/thumb/thumb-19.jpg">
                                     </a>
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="${CTX_PATH}/images/image-gallery/20.jpg" data-sub-html="Demo Description">
+                                    <a href="${CTX_PATH}/material/images/image-gallery/20.jpg" data-sub-html="Demo Description">
                                         <img class="img-responsive thumbnail" src="${CTX_PATH}/images/image-gallery/thumb/thumb-20.jpg">
                                     </a>
                                 </div>
@@ -586,22 +586,22 @@
     <c:import url="/GlobalPageLink.do?link=common/include/GlobalFooter" />
 
     <!-- Bootstrap Core Js -->
-    <script src="${CTX_PATH}/plugins/bootstrap/js/bootstrap.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/plugins/bootstrap/js/bootstrap.js?v=${SYS_VERSION}"></script>
 
     <!-- Select Plugin Js -->
-    <script src="${CTX_PATH}/plugins/bootstrap-select/js/bootstrap-select.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/plugins/bootstrap-select/js/bootstrap-select.js?v=${SYS_VERSION}"></script>
 
     <!-- Slimscroll Plugin Js -->
-    <script src="${CTX_PATH}/plugins/jquery-slimscroll/jquery.slimscroll.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/plugins/jquery-slimscroll/jquery.slimscroll.js?v=${SYS_VERSION}"></script>
 
     <!-- Waves Effect Plugin Js -->
-    <script src="${CTX_PATH}/plugins/node-waves/waves.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/plugins/node-waves/waves.js?v=${SYS_VERSION}"></script>
 
     <!-- Light Gallery Plugin Js -->
-    <script src="${CTX_PATH}/plugins/light-gallery/js/lightgallery-all.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/plugins/light-gallery/js/lightgallery-all.js?v=${SYS_VERSION}"></script>
 
 
-    <script src="${CTX_PATH}/js/material/medias/image-gallery.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/js/medias/image-gallery.js?v=${SYS_VERSION}"></script>
 
 
 

@@ -257,7 +257,7 @@
             <!-- User Info -->
             <div class="user-info">
                 <div class="image">
-                    <img src="${CTX_PATH}/images/user.png" width="48" height="48" alt="User" />
+                    <img src="${CTX_PATH}/material/images/user.png" width="48" height="48" alt="User" />
                 </div>
                 <div class="info-container">
                     <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jihee Moon</div>
@@ -555,9 +555,9 @@
     <c:import url="/GlobalPageLink.do?link=common/include/GlobalFooter" />
 
     <!-- Chart Plugins Js -->
-    <script src="${CTX_PATH}/plugins/chartjs/Chart.bundle.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/plugins/chartjs/Chart.bundle.js?v=${SYS_VERSION}"></script>
 
-    <script src="${CTX_PATH}/js/material/charts/chartjs.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/js/charts/chartjs.js?v=${SYS_VERSION}"></script>
 
 </body>
 

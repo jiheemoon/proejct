@@ -257,7 +257,7 @@
             <!-- User Info -->
             <div class="user-info">
                 <div class="image">
-                    <img src="${CTX_PATH}/images/user.png" width="48" height="48" alt="User" />
+                    <img src="${CTX_PATH}/material/images/user.png" width="48" height="48" alt="User" />
                 </div>
                 <div class="info-container">
                     <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jihee Moon</div>
@@ -741,7 +741,7 @@
     </section>
 
     <c:import url="/GlobalPageLink.do?link=common/include/GlobalFooter" />
-    <script src="${CTX_PATH}/js/material/examples/profile.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/js/examples/profile.js?v=${SYS_VERSION}"></script>
 
 </body>
 

@@ -257,7 +257,7 @@
             <!-- User Info -->
             <div class="user-info">
                 <div class="image">
-                    <img src="${CTX_PATH}/images/user.png" width="48" height="48" alt="User" />
+                    <img src="${CTX_PATH}/material/images/user.png" width="48" height="48" alt="User" />
                 </div>
                 <div class="info-container">
                     <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jihee Moon</div>
@@ -744,9 +744,9 @@
     <c:import url="/GlobalPageLink.do?link=common/include/GlobalFooter" />
 
     <!-- Jquery Knob Plugin Js -->
-    <script src="${CTX_PATH}/plugins/jquery-knob/jquery.knob.min.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/plugins/jquery-knob/jquery.knob.min.js?v=${SYS_VERSION}"></script>
 
-    <script src="${CTX_PATH}/js/material/charts/jquery-knob.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/js/charts/jquery-knob.js?v=${SYS_VERSION}"></script>
 
 </body>
 

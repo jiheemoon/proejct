@@ -12,19 +12,19 @@
     <c:import url="/GlobalPageLink.do?link=common/include/GlobalHeader" />
 
     <!-- Colorpicker Css -->
-    <link rel="stylesheet" type="text/css" href="${CTX_PATH}/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css?v=${SYS_VERSION}" />
+    <link rel="stylesheet" type="text/css" href="${CTX_PATH}/material/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css?v=${SYS_VERSION}" />
     <!-- Dropzone Css -->
-    <link rel="stylesheet" type="text/css" href="${CTX_PATH}/plugins/dropzone/dropzone.css?v=${SYS_VERSION}" />
+    <link rel="stylesheet" type="text/css" href="${CTX_PATH}/material/plugins/dropzone/dropzone.css?v=${SYS_VERSION}" />
     <!-- Multi Select Css -->
-    <link rel="stylesheet" type="text/css" href="${CTX_PATH}/plugins/multi-select/css/multi-select.css?v=${SYS_VERSION}" />
+    <link rel="stylesheet" type="text/css" href="${CTX_PATH}/material/plugins/multi-select/css/multi-select.css?v=${SYS_VERSION}" />
     <!-- Bootstrap Spinner Css -->
-    <link rel="stylesheet" type="text/css" href="${CTX_PATH}/plugins/jquery-spinner/css/bootstrap-spinner.css?v=${SYS_VERSION}" />
+    <link rel="stylesheet" type="text/css" href="${CTX_PATH}/material/plugins/jquery-spinner/css/bootstrap-spinner.css?v=${SYS_VERSION}" />
     <!-- Bootstrap Tagsinput Css -->
-    <link rel="stylesheet" type="text/css" href="${CTX_PATH}/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css?v=${SYS_VERSION}" />
+    <link rel="stylesheet" type="text/css" href="${CTX_PATH}/material/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css?v=${SYS_VERSION}" />
     <!-- Bootstrap Select Css -->
-    <link rel="stylesheet" type="text/css" href="${CTX_PATH}/plugins/bootstrap-select/css/bootstrap-select.css?v=${SYS_VERSION}" />
+    <link rel="stylesheet" type="text/css" href="${CTX_PATH}/material/plugins/bootstrap-select/css/bootstrap-select.css?v=${SYS_VERSION}" />
     <!-- noUISlider Css -->
-    <link rel="stylesheet" type="text/css" href="${CTX_PATH}/plugins/nouislider/nouislider.min.css?v=${SYS_VERSION}" />
+    <link rel="stylesheet" type="text/css" href="${CTX_PATH}/material/plugins/nouislider/nouislider.min.css?v=${SYS_VERSION}" />
 
 </head>
 
@@ -272,7 +272,7 @@
             <!-- User Info -->
             <div class="user-info">
                 <div class="image">
-                    <img src="${CTX_PATH}/images/user.png" width="48" height="48" alt="User" />
+                    <img src="${CTX_PATH}/material/images/user.png" width="48" height="48" alt="User" />
                 </div>
                 <div class="info-container">
                     <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jihee Moon</div>
@@ -1266,24 +1266,24 @@
     <c:import url="/GlobalPageLink.do?link=common/include/GlobalFooter" />
 
     <!-- Bootstrap Colorpicker Js -->
-    <script src="${CTX_PATH}/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js?v=${SYS_VERSION}"></script>
     <!-- Dropzone Plugin Js -->
-    <script src="${CTX_PATH}/plugins/dropzone/dropzone.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/plugins/dropzone/dropzone.js?v=${SYS_VERSION}"></script>
     <!-- Input Mask Plugin Js -->
-    <script src="${CTX_PATH}/plugins/jquery-inputmask/jquery.inputmask.bundle.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/plugins/jquery-inputmask/jquery.inputmask.bundle.js?v=${SYS_VERSION}"></script>
     <!-- Multi Select Plugin Js -->
-    <script src="${CTX_PATH}/plugins/multi-select/js/jquery.multi-select.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/plugins/multi-select/js/jquery.multi-select.js?v=${SYS_VERSION}"></script>
     <!-- Jquery Spinner Plugin Js -->
-    <script src="${CTX_PATH}/plugins/jquery-spinner/js/jquery.spinner.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/plugins/jquery-spinner/js/jquery.spinner.js?v=${SYS_VERSION}"></script>
     <!-- Bootstrap Tags Input Plugin Js -->
-    <script src="${CTX_PATH}/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js?v=${SYS_VERSION}"></script>
     <!-- noUISlider Plugin Js -->
-    <script src="${CTX_PATH}/plugins/nouislider/nouislider.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/plugins/nouislider/nouislider.js?v=${SYS_VERSION}"></script>
     <!-- Waves Effect Plugin Js -->
-    <script src="${CTX_PATH}/plugins/node-waves/waves.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/plugins/node-waves/waves.js?v=${SYS_VERSION}"></script>
 
 
-    <script src="${CTX_PATH}/js/material/forms/advanced-form-elements.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/js/forms/advanced-form-elements.js?v=${SYS_VERSION}"></script>
 
 </body>
 

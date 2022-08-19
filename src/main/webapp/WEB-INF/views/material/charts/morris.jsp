@@ -10,7 +10,7 @@
     <title>${SYS_NAME}</title>
 
     <!-- Morris Css -->
-    <link rel="stylesheet" type="text/css" href="${CTX_PATH}/plugins/morrisjs/morris.css?v=${SYS_VERSION}" />
+    <link rel="stylesheet" type="text/css" href="${CTX_PATH}/material/plugins/morrisjs/morris.css?v=${SYS_VERSION}" />
     
     <c:import url="/GlobalPageLink.do?link=common/include/GlobalHeader" />
     
@@ -260,7 +260,7 @@
             <!-- User Info -->
             <div class="user-info">
                 <div class="image">
-                    <img src="${CTX_PATH}/images/user.png" width="48" height="48" alt="User" />
+                    <img src="${CTX_PATH}/material/images/user.png" width="48" height="48" alt="User" />
                 </div>
                 <div class="info-container">
                     <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jihee Moon</div>
@@ -557,10 +557,10 @@
     <c:import url="/GlobalPageLink.do?link=common/include/GlobalFooter" />
 
     <!-- Morris Plugin Js -->
-    <script src="${CTX_PATH}/plugins/raphael/raphael.min.js?v=${SYS_VERSION}"></script>
-    <script src="${CTX_PATH}/plugins/morrisjs/morris.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/plugins/raphael/raphael.min.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/plugins/morrisjs/morris.js?v=${SYS_VERSION}"></script>
 
-    <script src="${CTX_PATH}/js/material/charts/morris.js?v=${SYS_VERSION}"></script>
+    <script src="${CTX_PATH}/material/js/charts/morris.js?v=${SYS_VERSION}"></script>
 
 </body>
 
